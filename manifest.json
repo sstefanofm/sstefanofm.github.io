@@ -1,0 +1,15 @@
+{
+    "short_name": "sstefanofm.github.io",
+    "name": "https://github.com/sstefanofm portfolio",
+    "icons": [
+        {
+            "src": "title_logo.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#666666",
+    "background_color": "#666666"
+}
