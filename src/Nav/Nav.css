@@ -1,10 +1,12 @@
 .Nav {
-    width: 60%;
-    margin: auto;
     margin-top: 1em;
     overflow: hidden;
     justify-content: center;
     align-items: center;
+}
+
+.Logo {
+    float:left;
 }
 
 .Nav-logo {
@@ -13,76 +15,21 @@
 }
 
 .Nav h1 {
-    line-height: 5.35;
-    color: #f2eff2;
-    height: 10px;
-    position: relative;
-    transition: all 0.3s;
-    top: 0;
+    color: #000;
+    line-height: 3.4em;
     cursor: pointer;
+    width: 0;
 }
 
-.Nav h1:hover {
-    top: -0.2em;
-    color: #e1dde1;
-    text-shadow: 1px 1px 2px #e01058;
+.Nav h1:hover,
+.Nav h1:active {
+    text-shadow: 0px 0px 7px #e01058;
 }
 
 .Nav h1 a {
     color: inherit;
-    text-decoration: none;
 }
 
 .Nav-items {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: absolute;
-    top: calc(8.5% + 1em);
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-
-.Nav-items li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-.Nav-items a {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    width: 4em;
-    height: 1em;
-    text-align: center;
-    border-radius: 3px;
-    background: #f2eff2;
-    font-size: 27px;
-    color: #666;
-    transition: 0.5s;
-}
-
-.Nav-items a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 40%;
-    background: #e01058;
-    transition: 0.5s;
-    transform: scale(0.9);
-    z-index: -1;
-}
-
-.Nav-items a:hover::before {
-    transform: scale(1.07);
-    box-shadow: 0 0 1.1em #e01058;
-}
-
-.Nav-items a:hover {
-    color: #e01058;
-    box-shadow: 0 0 5px #e01058;
-    text-shadow: 0 0 5px #e01058;
+    float: right;
 }

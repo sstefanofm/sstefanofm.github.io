@@ -1,0 +1,12 @@
+.Projects {
+    background-color: black;
+}
+
+.Projects h2 {
+    font-weight: normal;
+    margin-top: -0.2em;
+}
+
+.Projects-TitleIcon {
+    float: right;
+}

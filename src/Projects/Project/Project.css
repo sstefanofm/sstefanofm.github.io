@@ -1,0 +1,45 @@
+.Project {
+    display: inline-block;
+    width: 47%;
+    border: 2px solid black;
+    margin: 1%;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.Project:hover,
+.Project:active {
+    box-shadow: 2px 2px 5px #666;
+}
+
+.Project-ImgContainer,
+.Project-TextContent {
+    padding: 1em;
+}
+
+.Project-ImgContainer:nth-child(odd) {
+    float: left;
+}
+
+.Project-ImgContainer:nth-child(even) {
+    float: right;
+}
+
+.Project-ImgContainer {
+    width: 9em;
+    height: 4.5em;
+}
+
+.Project-ImgContainer img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 720px) {
+    .Project {
+        width: 98%;
+    }
+}
