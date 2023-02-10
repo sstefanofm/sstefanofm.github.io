@@ -3,7 +3,7 @@
     "name": "https://github.com/sstefanofm portfolio",
     "icons": [
         {
-            "src": "title_logo.png",
+            "src": "img/title_logo.png",
             "type": "image/png",
             "sizes": "512x512"
         }

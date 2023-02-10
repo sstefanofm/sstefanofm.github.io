@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9764c8e.css",
-    "main.js": "/static/js/main.fde8a7e9.js",
+    "main.css": "/static/css/main.ca02fe0d.css",
+    "main.js": "/static/js/main.a69f89d6.js",
     "static/media/agave regular Nerd Font Complete Mono.ttf": "/static/media/agave regular Nerd Font Complete Mono.84cb05a01fb7860165c0.ttf",
     "static/media/skull.png": "/static/media/skull.d7d2ef2b4e6b709b30f7.png",
     "index.html": "/index.html",
-    "main.d9764c8e.css.map": "/static/css/main.d9764c8e.css.map",
-    "main.fde8a7e9.js.map": "/static/js/main.fde8a7e9.js.map"
+    "main.ca02fe0d.css.map": "/static/css/main.ca02fe0d.css.map",
+    "main.a69f89d6.js.map": "/static/js/main.a69f89d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9764c8e.css",
-    "static/js/main.fde8a7e9.js"
+    "static/css/main.ca02fe0d.css",
+    "static/js/main.a69f89d6.js"
   ]
 }
