@@ -16,8 +16,9 @@
 
 .Nav h1 {
     color: #000;
-    line-height: 3.4em;
+    padding: 1.8em 0;
     cursor: pointer;
+    font-size: 2em;
     width: 0;
 }
 

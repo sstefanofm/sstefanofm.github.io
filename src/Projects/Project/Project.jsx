@@ -2,14 +2,14 @@ import './Project.css'
 
 const Project = ({ name, description, src, href }) => {
     return (
-        <a className="Project" href={href} target="_blank">
+        <a className="Project" href={href} target="_blank" rel="noreferrer">
             <div className="Project-ImgContainer">
-                <img src={src} />
+                <img src={src} alt={src} />
             </div>
-            <div className="Project-TextContent">
-                <div>/* {name} */</div>
-                <div>{description}</div>
+            <div className="Project-Name">
+                /{''}* {name} */
             </div>
+            <div className="Project-Description">{description}</div>
         </a>
     )
 }

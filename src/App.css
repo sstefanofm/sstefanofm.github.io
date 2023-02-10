@@ -10,6 +10,7 @@ body {
     background-image: linear-gradient(#fafafa 1px, transparent 1px),
         /* horizontal */ linear-gradient(to right, #fafafa 1px, #666 1px); /* vertical */
     background-size: 20px /* square width */ 20px /* square height */;
+    background-attachment: fixed;
 }
 
 body > * {
@@ -26,6 +27,6 @@ body > * {
 
 @media only screen and (max-width: 720px) {
     body > * {
-        width: 100%;
+        width: 95%;
     }
 }
