@@ -1,6 +1,6 @@
 .Projects h2 {
     font-weight: normal;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: -0.2em;
 }
 
@@ -27,6 +27,6 @@
     }
 
     100% {
-        transform: rotate(-180deg)
+        transform: rotate(-180deg);
     }
 }

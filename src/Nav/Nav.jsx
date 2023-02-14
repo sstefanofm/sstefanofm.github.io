@@ -3,13 +3,14 @@ import logo from './skull.png'
 import Item from './Item/Item'
 
 const Nav = () => {
-    let counter = 0;
     const listItems = [
         {
             name: 'home',
+            to: '/',
         },
         {
             name: 'about',
+            to: '/about',
         },
     ]
 
@@ -29,10 +30,11 @@ const Nav = () => {
             </div>
 
             <ul className="Nav-items">
-                {listItems.map(item => (
+                {listItems.map((item, i) => (
                     <Item
-                        key={++counter}
+                        key={`${i}${item.name}`}
                         name={item.name}
+                        to={item.to}
                     />
                 ))}
             </ul>

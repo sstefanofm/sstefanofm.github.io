@@ -3,8 +3,13 @@
     src: url(./fonts/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf);
 }
 
+@font-face {
+    font-family: 'FiraCode';
+    src: url(./fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete\ Mono.ttf);
+}
+
 body {
-    font-family: 'agave', monospace;
+    font-family: 'FiraCode', monospace;
     background-color: #666;
     opacity: 1;
     background-image: linear-gradient(#fafafa 1px, transparent 1px),

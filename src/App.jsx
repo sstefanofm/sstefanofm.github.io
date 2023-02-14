@@ -1,6 +1,7 @@
 import './App.css'
 import Nav from './Nav/Nav'
 import Projects from './Projects/Projects'
+import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
     const imgPath = `/img/`
@@ -8,7 +9,10 @@ const App = () => {
     return (
         <>
             <Nav />
-            <Projects imgpath={imgPath} />
+            <Routes>
+                <Route path="/" element={<Projects imgpath={imgPath} />} />
+                <Route path="/about" element={<> </>} />
+            </Routes>
         </>
     )
 }

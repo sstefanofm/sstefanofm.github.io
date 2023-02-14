@@ -2,7 +2,6 @@ import './Projects.css'
 import Project from './Project/Project'
 
 const Projects = ({ imgpath }) => {
-    let counter = 0
     const projects = [
         {
             src: 'yetid_logo.png',
@@ -22,8 +21,8 @@ const Projects = ({ imgpath }) => {
                 <div className="Projects-TitleIcon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
+                        width="26"
+                        height="26"
                         fill="currentColor"
                         className="bi bi-code-slash"
                         viewBox="0 0 16 16"
@@ -33,9 +32,9 @@ const Projects = ({ imgpath }) => {
                 </div>
                 projects.txt
             </h2>
-            {projects.map(p => (
+            {projects.map((p, i) => (
                 <Project
-                    key={++counter}
+                    key={`${i}${p.name}`}
                     src={p.src}
                     name={p.name}
                     description={p.description}
