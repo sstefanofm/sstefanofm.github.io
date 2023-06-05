@@ -10,6 +10,13 @@ const Projects = ({ imgpath }) => {
                 "This is a website I'm currently coding for a university final subject test. Its code majority is written in vanilla PHP.",
             href: 'https://github.com/sstefanofm/yetid',
         },
+        {
+            src: 'dots_logo.gif',
+            name: 'dots',
+            description:
+                "My dotfiles (currently working...)",
+            href: 'https://github.com/sstefanofm/dots',
+        },
     ]
     projects.map(
         p => (p.src = `${imgpath}${p.src}`)
@@ -32,15 +39,17 @@ const Projects = ({ imgpath }) => {
                 </div>
                 projects.txt
             </h2>
-            {projects.map((p, i) => (
-                <Project
-                    key={`${i}${p.name}`}
-                    src={p.src}
-                    name={p.name}
-                    description={p.description}
-                    href={p.href}
-                />
-            ))}
+            <div className="Projects-Wrapper">
+                {projects.map((p, i) => (
+                    <Project
+                        key={`${i}${p.name}`}
+                        src={p.src}
+                        name={p.name}
+                        description={p.description}
+                        href={p.href}
+                    />
+                ))}
+            </div>
         </div>
     )
 }

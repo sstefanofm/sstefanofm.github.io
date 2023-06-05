@@ -30,3 +30,9 @@
         transform: rotate(-180deg);
     }
 }
+
+.Projects-Wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
