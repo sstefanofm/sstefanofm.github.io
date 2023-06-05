@@ -16,6 +16,7 @@ body {
         /* horizontal */ linear-gradient(to right, #fafafa 1px, #666 1px); /* vertical */
     background-size: 20px /* square width */ 20px /* square height */;
     background-attachment: fixed;
+    animation: moveBg 180s infinite;
 }
 
 body > * {
@@ -28,6 +29,28 @@ body > * {
     margin-bottom: 1em;
     background-color: #e1dde1;
     border: 2px solid #000;
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0% 0%;  
+    }
+
+    25% {
+        background-position: 25% 25%;  
+    }
+
+    50% {
+        background-position: 50% 50%;  
+    }
+
+    75% {
+        background-position: 75% 75%;  
+    }
+    
+    100% {
+        background-position: 100% 100%;  
+    }
 }
 
 @media only screen and (max-width: 720px) {
