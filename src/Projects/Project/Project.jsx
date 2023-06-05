@@ -8,7 +8,7 @@ const Project = ({ name, description, src, href }) => {
                     <img src={src} alt={src} />
                 </div>
                 <div className="Project-Name">
-                    /{''}* {name} */
+                    {name}
                 </div>
             </div>
             <div className="Project-Description">{description}</div>
