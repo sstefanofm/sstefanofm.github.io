@@ -1,0 +1,18 @@
+{
+  "projects": [ 
+    {
+      "src": "yetid_logo.png",
+      "name": "Yetid.",
+      "description":
+          "This is a website I'm currently coding for a university final subject test. Its code majority is written in vanilla PHP.",
+      "href": "https://github.com/sstefanofm/yetid"
+    },
+    {
+    "src": "dots_logo.gif",
+    "name": "dots",
+    "description":
+        "My dotfiles (currently working...)",
+    "href": "https://github.com/sstefanofm/dots"
+    }
+  ]
+}
