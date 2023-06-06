@@ -45,11 +45,11 @@ body > * {
     }
 
     75% {
-        background-position: 75% 75%;  
+        background-position: 25% 75%;  
     }
     
     100% {
-        background-position: 100% 100%;  
+        background-position: 0% 100%;  
     }
 }
 
