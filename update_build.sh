@@ -1,4 +1,4 @@
-# /bin/sh
+#! /usr/bin/env bash
 
 repo='sstefanofm.github.io'
 build='build'
