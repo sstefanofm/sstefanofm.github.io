@@ -1,57 +1,57 @@
 .Project {
-    /* display: inline-grid;
+  /* display: inline-grid;
     column-gap: 0;
     row-gap: 1em; */
-    width: 47%;
-    /* grid-template-columns: auto auto auto;
+  width: 47%;
+  /* grid-template-columns: auto auto auto;
     grid-template-rows: 4em auto; */
-    border: 2px solid #000;
-    margin: 1%;
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
-    font-size: .9em;
+  border: 2px solid #000;
+  margin: 1%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9em;
 }
 
 .Project:hover,
 .Project:active {
-    box-shadow: 2px 2px 5px #666;
-    color: #000;
+  box-shadow: 2px 2px 5px #666;
+  color: #000;
 }
 
 .Project-Header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .Project-Header,
 .Project-Description {
-    padding: 1em;
+  padding: 1em;
 }
 
 .Project:hover .Project-ImgContainer,
 .Project:active .Project-ImgContainer {
-    box-shadow: 2px 2px 5px #666;
+  box-shadow: 2px 2px 5px #666;
 }
 
 .Project-ImgContainer img {
-    border: 2px solid #000;
-    height: 5.5em;
+  border: 2px solid #000;
+  height: 5.5em;
 }
 
 .Project:nth-child(even) .Project-Header .Project-ImgContainer {
-    border: 2px double #ae9944;
+  border: 2px double #ae9944;
 }
 
 .Project-Name {
-    font-style: italic;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 1200px) {
-    .Project {
-        width: 98%;
-        position: relative;
-        top: 0 !important;
-    }
+  .Project {
+    width: 98%;
+    position: relative;
+    top: 0 !important;
+  }
 }

@@ -1,38 +1,38 @@
 .Projects h2 {
-    font-weight: normal;
-    font-size: 1.2em;
-    margin-top: -0.2em;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: -0.2em;
 }
 
 .Projects-TitleIcon {
-    float: right;
-    animation: grimRotation 4s infinite;
+  float: right;
+  animation: grimRotation 4s infinite;
 }
 
 @keyframes grimRotation {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    25% {
-        transform: rotate(-45deg);
-    }
+  25% {
+    transform: rotate(-45deg);
+  }
 
-    50% {
-        transform: rotate(-90deg);
-    }
+  50% {
+    transform: rotate(-90deg);
+  }
 
-    75% {
-        transform: rotate(-135deg);
-    }
+  75% {
+    transform: rotate(-135deg);
+  }
 
-    100% {
-        transform: rotate(-180deg);
-    }
+  100% {
+    transform: rotate(-180deg);
+  }
 }
 
 .Projects-Wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

@@ -1,60 +1,61 @@
 @font-face {
-    font-family: 'agave';
-    src: url(./fonts/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf);
+  font-family: 'agave';
+  src: url(./fonts/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf);
 }
 
 @font-face {
-    font-family: 'FiraCode';
-    src: url(./fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete\ Mono.ttf);
+  font-family: 'FiraCode';
+  src: url(./fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete\ Mono.ttf);
 }
 
 body {
-    font-family: 'FiraCode', monospace;
-    background-color: #666;
-    opacity: 1;
-    background-image: linear-gradient(#fafafa 1px, transparent 1px),
-        /* horizontal */ linear-gradient(to right, #fafafa 1px, #666 1px); /* vertical */
-    background-size: 20px /* square width */ 20px /* square height */;
-    background-attachment: fixed;
-    animation: moveBg 180s infinite;
+  font-family: 'FiraCode', monospace;
+  background-color: #666;
+  opacity: 1;
+  background-image:
+    linear-gradient(#fafafa 1px, transparent 1px),
+    /* horizontal */ linear-gradient(to right, #fafafa 1px, #666 1px); /* vertical */
+  background-size: 20px /* square width */ 20px /* square height */;
+  background-attachment: fixed;
+  animation: moveBg 180s infinite;
 }
 
 body > * {
-    width: 60%;
-    margin: auto;
+  width: 60%;
+  margin: auto;
 }
 
 #root > * {
-    padding: 1em;
-    margin-bottom: 1em;
-    background-color: #e1dde1;
-    border: 2px solid #000;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: #e1dde1;
+  border: 2px solid #000;
 }
 
 @keyframes moveBg {
-    0% {
-        background-position: 0% 0%;  
-    }
+  0% {
+    background-position: 0% 0%;
+  }
 
-    25% {
-        background-position: 25% 25%;  
-    }
+  25% {
+    background-position: 25% 25%;
+  }
 
-    50% {
-        background-position: 50% 50%;  
-    }
+  50% {
+    background-position: 50% 50%;
+  }
 
-    75% {
-        background-position: 25% 75%;  
-    }
-    
-    100% {
-        background-position: 0% 100%;  
-    }
+  75% {
+    background-position: 25% 75%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 @media only screen and (max-width: 720px) {
-    body > * {
-        width: 95%;
-    }
+  body > * {
+    width: 95%;
+  }
 }

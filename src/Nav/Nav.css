@@ -1,36 +1,36 @@
 .Nav {
-    margin-top: 1em;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+  margin-top: 1em;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .Logo {
-    float:left;
+  float: left;
 }
 
 .Nav-logo {
-    width: 120px;
-    float: left;
+  width: 120px;
+  float: left;
 }
 
 .Nav h1 {
-    color: #000;
-    padding: 2.1em 0;
-    cursor: pointer;
-    font-size: 1.3em;
-    width: 0;
+  color: #000;
+  padding: 2.1em 0;
+  cursor: pointer;
+  font-size: 1.3em;
+  width: 0;
 }
 
 .Nav h1:hover,
 .Nav h1:active {
-    text-shadow: 0px 0px 7px #e01058;
+  text-shadow: 0px 0px 7px #e01058;
 }
 
 .Nav h1 a {
-    color: inherit;
+  color: inherit;
 }
 
 .Nav-items {
-    float: right;
+  float: right;
 }

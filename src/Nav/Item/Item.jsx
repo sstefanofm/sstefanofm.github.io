@@ -21,13 +21,13 @@ import { Link } from 'react-router-dom'
 // }
 
 const Item = ({ name, to }) => {
-    return (
-        <li className="Item">
-            <Link to={to}>
-                <span>{name}</span>
-            </Link>
-        </li>
-    )
+  return (
+    <li className='Item'>
+      <Link to={to}>
+        <span>{name}</span>
+      </Link>
+    </li>
+  )
 }
 
 export default Item
