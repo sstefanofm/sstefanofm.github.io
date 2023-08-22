@@ -1,5 +1,6 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 // const setIcon = to => {
 //     const endpoint = window.location.href.slice(
@@ -28,6 +29,11 @@ const Item = ({ name, to }) => {
       </Link>
     </li>
   )
+}
+
+Item.propTypes = {
+  name: PropTypes.string,
+  to: PropTypes.string,
 }
 
 export default Item

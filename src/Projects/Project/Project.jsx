@@ -1,4 +1,5 @@
 import './Project.css'
+import PropTypes from 'prop-types'
 
 const Project = ({ name, description, src, href }) => {
   return (
@@ -20,6 +21,13 @@ const Project = ({ name, description, src, href }) => {
       <div className='Project-Description'>{description}</div>
     </a>
   )
+}
+
+Project.propTypes = {
+  name: PropTypes.string,
+  description: PropTypes.string,
+  src: PropTypes.string,
+  href: PropTypes.string,
 }
 
 export default Project

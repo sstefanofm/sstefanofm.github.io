@@ -1,5 +1,6 @@
 import './Projects.css'
 import Project from './Project/Project'
+import PropTypes from 'prop-types'
 
 import { useEffect, useState } from 'react'
 
@@ -53,6 +54,10 @@ const Projects = ({ imgpath }) => {
       </div>
     </div>
   )
+}
+
+Projects.propTypes = {
+  imgpath: PropTypes.string,
 }
 
 export default Projects
