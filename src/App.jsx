@@ -4,7 +4,7 @@ import Projects from './Projects/Projects'
 import { Routes, Route } from 'react-router-dom'
 
 const App = () => {
-  const imgPath = `/img/`
+  const imgPath = '/img/'
 
   return (
     <>
