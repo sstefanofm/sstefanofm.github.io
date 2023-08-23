@@ -2,12 +2,15 @@
   list-style-type: none;
 }
 
-.Item a {
+.Item-Link {
   color: #000;
   text-decoration: none;
   font-size: 1em;
+  display: flex;
+  justify-content: space-between;
 }
 
-.Item a:hover span {
+.Item-Link:hover span {
+  color: #000;
   text-decoration: underline;
 }

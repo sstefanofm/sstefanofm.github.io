@@ -1,24 +1,15 @@
 import './App.css'
 import Nav from './Nav/Nav'
-import Projects from './Projects/Projects'
-import { Routes, Route } from 'react-router-dom'
+import routes from './routes'
+import { useRoutes } from 'react-router-dom'
 
 const App = () => {
-  const imgPath = '/img/'
+  const mainContent = useRoutes(routes)
 
   return (
     <>
       <Nav />
-      <Routes>
-        <Route
-          path='/'
-          element={<Projects imgpath={imgPath} />}
-        />
-        <Route
-          path='/about'
-          element={<> </>}
-        />
-      </Routes>
+      {mainContent}
     </>
   )
 }
