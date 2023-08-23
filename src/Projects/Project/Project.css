@@ -1,10 +1,5 @@
 .Project {
-  /* display: inline-grid;
-    column-gap: 0;
-    row-gap: 1em; */
   width: 47%;
-  /* grid-template-columns: auto auto auto;
-    grid-template-rows: 4em auto; */
   border: 2px solid #000;
   margin: 1%;
   cursor: pointer;
@@ -19,32 +14,32 @@
   color: #000;
 }
 
-.Project-Header {
+.Project__Header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.Project-Header,
-.Project-Description {
+.Project__Header,
+.Project__Description {
   padding: 1em;
 }
 
-.Project:hover .Project-ImgContainer,
-.Project:active .Project-ImgContainer {
+.Project:hover .Project__ImgContainer,
+.Project:active .Project__ImgContainer {
   box-shadow: 2px 2px 5px #666;
 }
 
-.Project-ImgContainer img {
+.Project__ImgContainer {
   border: 2px solid #000;
   height: 5.5em;
 }
 
-.Project:nth-child(even) .Project-Header .Project-ImgContainer {
+.Project:nth-child(even) .Project__ImgContainer {
   border: 2px double #ae9944;
 }
 
-.Project-Name {
+.Project__Name {
   font-style: italic;
 }
 
@@ -52,6 +47,6 @@
   .Project {
     width: 98%;
     position: relative;
-    top: 0 !important;
+    top: 0;
   }
 }

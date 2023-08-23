@@ -26,8 +26,8 @@ const Projects = ({ imgpath }) => {
 
   return (
     <div className='Projects'>
-      <h2>
-        <div className='Projects-TitleIcon'>
+      <h2 className='Projects__Title'>
+        <div className='Projects__Icon'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='26'
@@ -41,7 +41,7 @@ const Projects = ({ imgpath }) => {
         </div>
         projects.txt
       </h2>
-      <div className='Projects-Wrapper'>
+      <div className='Projects__ContentWrapper'>
         {projects.map((p, i) => (
           <Project
             key={`${i}${p.name}`}

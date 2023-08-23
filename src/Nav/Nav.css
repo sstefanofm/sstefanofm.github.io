@@ -1,20 +1,19 @@
 .Nav {
-  margin-top: 1em;
   overflow: hidden;
   justify-content: center;
   align-items: center;
 }
 
-.Logo {
+.Nav__Logo {
   float: left;
 }
 
-.Nav-logo {
+.Nav__Img {
+  float: left;
   width: 120px;
-  float: left;
 }
 
-.Nav h1 {
+.Nav__Title {
   color: #000;
   padding: 2.1em 0;
   cursor: pointer;
@@ -22,15 +21,16 @@
   width: 0;
 }
 
-.Nav h1:hover,
-.Nav h1:active {
+.Nav__Title:hover,
+.Nav__Title:active {
   text-shadow: 0px 0px 7px #e01058;
 }
 
-.Nav h1 a {
+.Nav__Title__Link,
+.Nav__Title__Link:hover {
   color: inherit;
 }
 
-.Nav-items {
+.Nav__Items {
   float: right;
 }

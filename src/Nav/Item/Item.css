@@ -2,7 +2,7 @@
   list-style-type: none;
 }
 
-.Item-Link {
+.Item__NavLink {
   color: #000;
   text-decoration: none;
   font-size: 1em;
@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 
-.Item-Link:hover span {
+.Item__NavLink:hover {
   color: #000;
   text-decoration: underline;
 }

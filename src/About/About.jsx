@@ -3,8 +3,8 @@ import './About.css'
 const About = () => {
   return (
     <div className='About'>
-      <h2>
-        <div className='About-TitleIcon'>
+      <h2 className='About__Title'>
+        <div className='About__TitleIcon'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='26'
@@ -18,7 +18,7 @@ const About = () => {
         </div>
         about.txt
       </h2>
-      <div className='About-Wrapper'>
+      <div className='About__ContentWrapper'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius amet debitis saepe dicta atque eaque, aliquid
         vero veritatis? Fugiat perferendis vero possimus voluptate minus corrupti eum, sint culpa dolor!
       </div>

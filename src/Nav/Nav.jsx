@@ -16,14 +16,15 @@ const Nav = () => {
 
   return (
     <div className='Nav'>
-      <div className='Logo'>
+      <div className='Nav__Logo'>
         <img
           src={logo}
-          className='Nav-logo'
+          className='Nav__Img'
           alt='logo'
         />
-        <h1>
+        <h1 className='Nav__Title'>
           <a
+            className='Nav__Title__Link'
             href='https://github.com/sstefanofm'
             target='_blank'
             rel='noreferrer'
@@ -33,7 +34,7 @@ const Nav = () => {
         </h1>
       </div>
 
-      <ul className='Nav-items'>
+      <ul className='Nav__Items'>
         {listItems.map((item, i) => (
           <Item
             key={`${i}${item.name}`}

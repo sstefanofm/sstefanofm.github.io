@@ -9,16 +9,15 @@ const Project = ({ name, description, src, href }) => {
       target='_blank'
       rel='noreferrer'
     >
-      <div className='Project-Header'>
-        <div className='Project-ImgContainer'>
-          <img
-            src={src}
-            alt={src}
-          />
-        </div>
-        <div className='Project-Name'>{name}</div>
+      <div className='Project__Header'>
+        <img
+          className='Project__ImgContainer'
+          src={src}
+          alt={src}
+        />
+        <div className='Project__Name'>{name}</div>
       </div>
-      <div className='Project-Description'>{description}</div>
+      <div className='Project__Description'>{description}</div>
     </a>
   )
 }

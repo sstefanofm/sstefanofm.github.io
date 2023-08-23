@@ -30,13 +30,13 @@ const Item = ({ name, to }) => {
   return (
     <li className='Item'>
       <NavLink
-        className='Item-Link'
+        className='Item__NavLink'
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
         to={to}
       >
         <div>{IconItemSelected(to)}</div>
         <div>
-          <span>{name}</span>
+          <span className='Item__Name'>{name}</span>
         </div>
       </NavLink>
     </li>
