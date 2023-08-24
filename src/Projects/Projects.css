@@ -6,7 +6,7 @@
 
 .Projects__Icon {
   float: right;
-  animation: grimRotation 4s infinite;
+  animation: grimRotation linear 4s infinite alternate;
 }
 
 @keyframes grimRotation {

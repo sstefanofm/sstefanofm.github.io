@@ -6,7 +6,7 @@
 
 .About__TitleIcon {
   float: right;
-  animation: grimRotation 4s infinite;
+  animation: grimRotation 4s linear infinite alternate;
 }
 
 @keyframes grimRotation {
