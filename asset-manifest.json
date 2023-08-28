@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.17020670.css",
-    "main.js": "/static/js/main.7ee46b55.js",
-    "static/media/Fira Code Regular Nerd Font Complete Mono.ttf": "/static/media/Fira Code Regular Nerd Font Complete Mono.066141405cdb8a974f94.ttf",
-    "static/media/agave regular Nerd Font Complete Mono.ttf": "/static/media/agave regular Nerd Font Complete Mono.84cb05a01fb7860165c0.ttf",
+    "main.css": "/static/css/main.2016b92f.css",
+    "main.js": "/static/js/main.38d9c487.js",
+    "static/media/CaskaydiaCoveNerdFont-Regular.woff": "/static/media/CaskaydiaCoveNerdFont-Regular.687f6051efb22e9ccc50.woff",
+    "static/media/CaskaydiaCoveNerdFont-Italic.woff": "/static/media/CaskaydiaCoveNerdFont-Italic.fa5288414b397f2e8071.woff",
     "static/media/skull.png": "/static/media/skull.d7d2ef2b4e6b709b30f7.png",
     "index.html": "/index.html",
-    "main.17020670.css.map": "/static/css/main.17020670.css.map",
-    "main.7ee46b55.js.map": "/static/js/main.7ee46b55.js.map"
+    "main.2016b92f.css.map": "/static/css/main.2016b92f.css.map",
+    "main.38d9c487.js.map": "/static/js/main.38d9c487.js.map"
   },
   "entrypoints": [
-    "static/css/main.17020670.css",
-    "static/js/main.7ee46b55.js"
+    "static/css/main.2016b92f.css",
+    "static/js/main.38d9c487.js"
   ]
 }
