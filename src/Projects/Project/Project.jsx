@@ -10,11 +10,13 @@ const Project = ({ name, description, src, href }) => {
       rel='noreferrer'
     >
       <div className='Project__Header'>
-        <img
-          className='Project__ImgContainer'
-          src={src}
-          alt={src}
-        />
+        <div className='Project__ImgContainer'>
+          <img
+            className='Project__Img'
+            src={`/img/${src}`}
+            alt={src}
+          />
+        </div>
         <div className='Project__Name'>{name}</div>
       </div>
       <div className='Project__Description'>{description}</div>

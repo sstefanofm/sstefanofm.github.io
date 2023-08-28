@@ -1,0 +1,9 @@
+.ContentHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ContentHeader__Title {
+  font-size: 1.2em;
+}

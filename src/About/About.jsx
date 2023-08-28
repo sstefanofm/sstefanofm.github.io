@@ -1,53 +1,64 @@
 import './About.css'
+import MainContent from '../MainContent/MainContent'
+import ContentHeader from '../MainContent/ContentHeader/ContentHeader'
+import ActivityIcon from '../Icons/ActivityIcon'
+import ContentBody from '../MainContent/ContentBody/ContentBody'
 
 const About = () => {
   return (
-    <div className='About'>
-      <h2 className='About__Title'>
-        <div className='About__TitleIcon'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            width='23'
-            height='23'
-            fill='currentColor'
-            className='bi bi-activity'
-            viewBox='0 0 16 16'
-          >
-            <path
-              fillRule='evenodd'
-              d='M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z'
-            />
-          </svg>
+    <MainContent>
+      <ContentHeader title='About_me'>
+        <ActivityIcon
+          width={23}
+          height={23}
+          modifiers={['GrimRotation', 'LightTheme']}
+        />
+      </ContentHeader>
+      <ContentBody>
+        <div className='About'>
+          <aside className='AsideMeCard'>
+            <section>
+              <h3 className='AsideMeCard__Title'>Stefano Federici Marsegani</h3>
+              <p className='AsideMeCard__Description'>Self taught software developer</p>
+            </section>
+            <div>
+              <img
+                className='AsideMeCard__Img'
+                src='/img/me.jpg'
+                alt='Me'
+              />
+            </div>
+          </aside>
+          <section className='SectionAboutMe'>
+            <h3 className='SectionAboutMe__Title'>Some things about me</h3>
+            <p>
+              My interest in computers started since my parents bought one when I was ~6y/o. At that time, I used to
+              play <code>Kirby</code>, <code>Counter Strike 1.6</code>, and <code>Need For Speed</code> games. I always
+              wondered how videogames were made, so when I was 15y/o I started learning <code>C</code> (using{' '}
+              <code>Code::Blocks</code> IDE). After studying diverse university careers, I realised my true passion was
+              programming.
+            </p>
+            <p>
+              I started coding again from scratch learning <code>Java</code> from video tutorials and solving basic code
+              problems, writing them with <code>Notepad</code> and compiling the code manually with <code>javac</code>{' '}
+              using <code>Windows</code> <code>cmd</code>. Since then, CLIs made me feel like a hacker. A few months
+              later, I started using <code>GNU/Linux</code> in <code>virtual machines</code>. Now, I always use some
+              distro as my preferred OS for daily usage and I want to keep learning as much as I can. One goal I have is
+              to write a <code>kernel</code> from source.
+            </p>
+            <p>
+              <code>Javascript</code> is my preferred language to work with, and it&apos;s the one I&apos;ve spent most
+              of the time learning and practicing. <code>C</code> is the language I use when I want to learn algorithms
+              in depth.
+            </p>
+            <p>
+              <i className='SectionAboutMe__Quote'>If you really want to understand, make it with C.</i>
+            </p>
+            <p>The 3 most important coding principles: KISS, DRY, and Clean Code At All Costs.</p>
+          </section>
         </div>
-        about.txt
-      </h2>
-      <div className='About__ContentWrapper'>
-        <div>
-          <b>Self-taught software developer.</b>
-          <br />
-          Computers obsessed me since I was a kid. The first language I started learning was C (using Code::Blocks IDE)
-          when I was 15yo. At that moment, programming didn&apos;t catch my attention. Many years later, I started again
-          from scratch, learning Java from youtube tutorials and solving basic code problems, writing the source code in
-          a .txt file with Windows&apos; Notepad, to later compile it with javac, using cmd.exe.
-          <br />
-          Since then, CLIs made me feel like a hacker. So a few months later, and after hopping from language to
-          language, I started using GNU/Linux in VMs. Now, GNU/Linux is my preferred OS for daily usage and I want to
-          keep learning as much as I can. One goal I have is to write a kernel from source.
-          <br />
-          Javascript is my preferred language to code and work with, and it&apos;s the one I&apos;ve spent most of the
-          time learning and practicing. C is the language I use when I want to learn algorithms in depth.
-          <br />
-          <i>If you really want to understand, make it with C</i>
-          <br />
-          The 3 most important coding principles: KISS, DRY, and Clean Code At All Costs.
-        </div>
-        <div>
-          <b>FAQ</b>
-          <div>website font</div>
-          <div>preferred distro</div>
-        </div>
-      </div>
-    </div>
+      </ContentBody>
+    </MainContent>
   )
 }
 

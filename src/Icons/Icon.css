@@ -1,0 +1,33 @@
+/* -- modifiers -- */
+
+/* theming */
+.Icon--LightTheme {
+  fill: #000;
+}
+
+/* animations */
+.Icon--GrimRotation {
+  animation: grimRotation 4s linear infinite alternate;
+}
+
+@keyframes grimRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(-90deg);
+  }
+
+  75% {
+    transform: rotate(-135deg);
+  }
+
+  100% {
+    transform: rotate(-180deg);
+  }
+}

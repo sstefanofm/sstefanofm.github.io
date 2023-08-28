@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'agave';
-  src: url(./fonts/agave\ regular\ Nerd\ Font\ Complete\ Mono.ttf);
+  font-family: 'CaskaydiaCove';
+  src: url(./fonts/CaskaydiaCoveNerdFont-Regular.woff);
 }
 
 @font-face {
-  font-family: 'FiraCode';
-  src: url(./fonts/Fira\ Code\ Regular\ Nerd\ Font\ Complete\ Mono.ttf);
+  font-family: 'CaskaydiaCove Italic';
+  src: url(./fonts/CaskaydiaCoveNerdFont-Italic.woff);
 }
 
 body {
-  font-family: 'FiraCode', monospace;
+  font-family: 'CaskaydiaCove', monospace;
   background-color: #666;
   opacity: 1;
   background-image:

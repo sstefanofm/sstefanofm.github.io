@@ -1,37 +1,4 @@
-.Projects__Title {
-  font-weight: normal;
-  font-size: 1.2em;
-  margin-top: -0.2em;
-}
-
-.Projects__Icon {
-  float: right;
-  animation: grimRotation linear 4s infinite alternate;
-}
-
-@keyframes grimRotation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-45deg);
-  }
-
-  50% {
-    transform: rotate(-90deg);
-  }
-
-  75% {
-    transform: rotate(-135deg);
-  }
-
-  100% {
-    transform: rotate(-180deg);
-  }
-}
-
-.Projects__ContentWrapper {
+.Projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
