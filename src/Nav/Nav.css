@@ -6,6 +6,8 @@
 
 .Nav__Logo {
   float: left;
+  display: flex;
+  flex-direction: row;
 }
 
 .Nav__Img {
