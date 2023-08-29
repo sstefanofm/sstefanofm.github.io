@@ -1,6 +1,10 @@
-# `<h1>sstefanofm.github.io</h1>`
+# 👾 #! /usr/bin/env sstefanofm.github.io
 
-`<p>This is my portfolio repository, where I publish my projects and some other things...</p>`
+### <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'>`<a>Source code</a>`</a>
+
+<p>This is my portfolio repository, where I publish my projects and some other things...</p>
+
+## `<h2>Stefano Federici Marsegani</h2>`
 
 ```
 --|-------------------------------------------------------
@@ -12,12 +16,10 @@
 4 |
 5 | # if not coding ingeniously, don't do anything
 6 | [[ $- != *i* ]] && return
+7 |
+8 | echo 'Self taught software developed focused on learning, coding, practicing, and having fun.'
 : _
 ```
-
-## `<h2>Stefano Federici Marsegani</h2>`
-
-Self taught software developed focused on learning, coding, practicing, and having fun.
 
 ### `<h3>This portfolio was made with the following technologies</h3>`
 
@@ -28,5 +30,3 @@ Self taught software developed focused on learning, coding, practicing, and havi
 [<img style='padding: 13px' height='43px' src='https://upload.wikimedia.org/wikipedia/commons/e/ee/GNU%2BLinux.png' alt='Linux' />](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 [<img style='padding: 13px' height='43px' src='https://prettier.io/icon.png' alt='Prettier' />](https://prettier.io)
 [<img style='padding: 13px' height='43px' src='https://eslint.org/favicon.ico' alt='Eslint' />](https://eslint.org)
-
-### <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'>`<a>source_code</a>`</a>
