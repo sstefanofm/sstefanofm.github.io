@@ -55,3 +55,9 @@
     overflow-y: auto;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .AsideMeCard__Img {
+    max-width: 95%;
+  }
+}
