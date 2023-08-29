@@ -1,4 +1,6 @@
-# 👾 #! /usr/bin/env stefanorc
+# `<h1>sstefanofm.github.io</h1>`
+
+`<p>This is my portfolio repository, where I publish my projects and some other things...</p>`
 
 ```
 --|-------------------------------------------------------
@@ -13,11 +15,11 @@
 : _
 ```
 
-## Stefano Federici Marsegani
+## `<h2>Stefano Federici Marsegani</h2>`
 
 Self taught software developed focused on learning, coding, practicing, and having fun.
 
-### This portfolio was made with the following technologies
+### `<h3>This portfolio was made with the following technologies</h3>`
 
 [<img style='padding: 13px' height='43px' src='https://react.dev/favicon.ico' alt='React' />](https://react.dev)
 [<img style='padding: 13px' height='43px' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' alt='CSS' />](https://www.w3schools.com/Css/)
@@ -26,3 +28,5 @@ Self taught software developed focused on learning, coding, practicing, and havi
 [<img style='padding: 13px' height='43px' src='https://upload.wikimedia.org/wikipedia/commons/e/ee/GNU%2BLinux.png' alt='Linux' />](https://www.gnu.org/gnu/linux-and-gnu.en.html)
 [<img style='padding: 13px' height='43px' src='https://prettier.io/icon.png' alt='Prettier' />](https://prettier.io)
 [<img style='padding: 13px' height='43px' src='https://eslint.org/favicon.ico' alt='Eslint' />](https://eslint.org)
+
+### <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'>`<a>source_code</a>`</a>
