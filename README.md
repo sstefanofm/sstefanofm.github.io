@@ -1,4 +1,4 @@
-# 👾 #! /usr/bin/env sstefanofm.github.io
+# <img src='.github/title.svg' alt='sstefanofm.github.io' />
 
 ## <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='.github/source_code.svg' alt='source code' /></a>
 
