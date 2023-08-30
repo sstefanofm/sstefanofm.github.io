@@ -1,6 +1,6 @@
 # 👾 #! /usr/bin/env sstefanofm.github.io
 
-### <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'>`<a>Source code</a>`</a>
+## <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='' alt='source code' /></a>
 
 <p>This is my portfolio repository, where I publish my projects and some other things...</p>
 

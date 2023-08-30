@@ -1,0 +1,72 @@
+<svg fill="none" viewBox="0 0 800 50" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+      @keyframes coolUnderline {
+        0% {
+          background: 
+            linear-gradient(currentColor 0 0) 
+            bottom /var(--d, 40%) 3px 
+            no-repeat;
+        }
+
+        100% {
+          --d: 80%;
+        }
+      }
+
+      @keyframes pointFinger {
+        0% {
+          left: 0;
+        }
+
+        100% {
+          left: 5px;
+        }
+      }
+
+      #wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+      }
+
+      #icon {
+        color: #fff;
+        margin-bottom: -1px;
+        padding-right: 0.2em;
+      }
+
+      #title {
+        color: #dcd;
+        font-size: 1.7em;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        background: 
+          linear-gradient(currentColor 0 0) 
+          bottom /var(--d, 80%) 3px 
+          no-repeat;
+        animation: coolUnderline 0.49s steps(2) alternate-reverse infinite;
+      }
+
+      #emoji {
+        position: relative;
+        bottom: 3px;
+        animation: pointFinger 0.6s alternate infinite;
+      }
+
+      span {
+        padding: 0 0.2em;
+      }
+			</style>
+      <div id='wrapper'>
+        <svg id='icon' xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+          <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+          <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z"/>
+        </svg>
+        <span id='title'>source code</span>
+        <span id='emoji'>👈</span>
+      </div>
+		</div>
+	</foreignObject>
+</svg>
