@@ -1,10 +1,10 @@
 # <img src='.github/title.svg' alt='sstefanofm.github.io' />
 
-## <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='.github/source_code.svg' alt='source code' /></a>
-
 <p>This is my portfolio repository, where I publish my projects and some other things...</p>
 
-## `<h2>Stefano Federici Marsegani</h2>`
+## <a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='.github/source_code.svg' alt='source code' /></a>
+
+## <img src='.github/me.svg' alt='Stefano Federici Marsegani' />
 
 ```
 --|-------------------------------------------------------
@@ -21,7 +21,7 @@
 : _
 ```
 
-### `<h3>This portfolio was made with the following technologies</h3>`
+## <img src='.github/technologies.svg' alt='This portfolio was made with the following technologies' />
 
 [<img style='padding: 13px' height='43px' src='https://react.dev/favicon.ico' alt='React' />](https://react.dev)
 [<img style='padding: 13px' height='43px' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' alt='CSS' />](https://www.w3schools.com/Css/)
