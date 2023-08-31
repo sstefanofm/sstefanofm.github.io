@@ -8,6 +8,7 @@ react-scripts $build
 git clone git@github.com:sstefanofm/$repo.git
 mv $repo/.git* $build/
 rm -rf $repo/
+cp ./README.md $repo/
 cd $build/
 git add ./
 git commit
