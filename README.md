@@ -21,7 +21,7 @@
 : _
 ```
 
-## <img src='.github/technologies.svg' alt='This portfolio was made with the following technologies' />
+## <img src='.github/tools.svg' alt='This portfolio was made with the following technologies' />
 
 [<img style='padding: 13px' height='43px' src='https://react.dev/favicon.ico' alt='React' />](https://react.dev)
 [<img style='padding: 13px' height='43px' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' alt='CSS' />](https://www.w3schools.com/Css/)
