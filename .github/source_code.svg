@@ -39,9 +39,9 @@
 
       #title {
         color: #dcd;
-        font-size: 2em;
+        font-size: 30px;
         font-weight: bold;
-        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        text-shadow: 1px 1px 2px red, 0 0 10px blue, 0 0 2px blue;
         background: 
           linear-gradient(currentColor 0 0) 
           bottom /var(--d, 80%) 3px 
@@ -52,12 +52,12 @@
       #emoji {
         position: relative;
         bottom: 3px;
-        text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+        text-shadow: 1px 1px 2px red, 0 0 10px blue, 0 0 2px blue;
         animation: pointFinger 0.6s alternate infinite;
       }
 
       span {
-        padding: 0 0.2em;
+        padding: 0 2px;
       }
 			</style>
       <div id='wrapper'>
