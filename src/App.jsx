@@ -1,12 +1,13 @@
 import './App.css'
 import Nav from './Nav/Nav'
-import Routes from './Routes/Routes'
+import { routes } from './routes'
+import { useRoutes } from 'react-router-dom'
 
 const App = () => {
   return (
     <>
       <Nav />
-      <Routes />
+      {useRoutes(routes) /* MainContent impls */}
     </>
   )
 }
