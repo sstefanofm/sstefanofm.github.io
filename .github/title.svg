@@ -25,7 +25,6 @@
       }
 
       #emoji {
-        padding: 0 10px;
         font-size: 40px;
         position: relative;
         bottom: 3px;
