@@ -1,15 +1,12 @@
 import './App.css'
 import Nav from './Nav/Nav'
-import routes from './routes'
-import { useRoutes } from 'react-router-dom'
+import Routes from './Routes/Routes'
 
 const App = () => {
-  const mainContent = useRoutes(routes)
-
   return (
     <>
       <Nav />
-      {mainContent}
+      <Routes />
     </>
   )
 }
