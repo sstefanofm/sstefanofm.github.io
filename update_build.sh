@@ -13,5 +13,5 @@ cd $build/
 git add ./
 git commit
 cd ../
-printf "\n\e[32mBuild is ready. cd into build and push the changes :D\e[37m\n\n"
+printf "\n\e[32mBuild is ready. cd into $build/ and push the changes :D\e[37m\n\n"
 sleep 1
