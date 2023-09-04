@@ -1,5 +1,5 @@
-import Projects from './Projects/Projects'
-import About from './About/About'
+import Projects from './components/Projects'
+import About from './components/About'
 
 export const routes = [
   {

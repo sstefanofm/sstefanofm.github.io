@@ -1,6 +1,6 @@
 import './Nav.css'
 import logo from './skull.png'
-import Item from './Item/Item'
+import Item from './Item'
 
 const Nav = () => {
   const listItems = [

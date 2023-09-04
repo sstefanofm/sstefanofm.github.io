@@ -1,9 +1,9 @@
 import './Projects.css'
-import MainContent from '../MainContent/MainContent'
-import ContentHeader from '../MainContent/ContentHeader/ContentHeader'
-import HomeIcon from '../Icons/HomeIcon'
-import ContentBody from '../MainContent/ContentBody/ContentBody'
-import Project from './Project/Project'
+import MainContent from '../MainContent'
+import ContentHeader from '../MainContent/ContentHeader'
+import HomeIcon from '../Icons/Home'
+import ContentBody from '../MainContent/ContentBody'
+import Project from './Project'
 import { projects as jsonProjects } from './projects'
 
 const Projects = () => {

@@ -1,5 +1,5 @@
 import './App.css'
-import Nav from './Nav/Nav'
+import Nav from './components/Nav'
 import { routes } from './routes'
 import { useRoutes } from 'react-router-dom'
 

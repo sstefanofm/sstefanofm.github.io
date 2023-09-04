@@ -1,8 +1,8 @@
 import './About.css'
-import MainContent from '../MainContent/MainContent'
-import ContentHeader from '../MainContent/ContentHeader/ContentHeader'
-import ActivityIcon from '../Icons/ActivityIcon'
-import ContentBody from '../MainContent/ContentBody/ContentBody'
+import MainContent from '../MainContent'
+import ContentHeader from '../MainContent/ContentHeader'
+import ActivityIcon from '../Icons/Activity'
+import ContentBody from '../MainContent/ContentBody'
 
 const About = () => {
   return (
