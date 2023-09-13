@@ -1,5 +1,6 @@
 import Projects from './components/Projects'
 import About from './components/About'
+import NotFound from './components/NotFound'
 
 export const routes = [
   {
@@ -9,5 +10,9 @@ export const routes = [
   {
     path: 'about',
     element: <About />,
+  },
+  {
+    path: '*',
+    element: <NotFound />,
   },
 ]
