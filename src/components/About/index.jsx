@@ -1,14 +1,14 @@
 import './About.css'
 import MainContent from '../MainContent'
 import ContentHeader from '../MainContent/ContentHeader'
-import ActivityIcon from '../Icons/Activity'
+import { Activity } from '../Icon'
 import ContentBody from '../MainContent/ContentBody'
 
 const About = () => {
   return (
     <MainContent>
       <ContentHeader title='About_me'>
-        <ActivityIcon
+        <Activity
           width={23}
           height={23}
           modifiers={['GrimRotation', 'LightTheme']}

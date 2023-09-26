@@ -1,6 +1,7 @@
 import './Nav.css'
 import logo from './skull.png'
 import Item from './Item'
+import ThemeSwitcher from '../ThemeSwitcher'
 
 const Nav = () => {
   const listItems = [
@@ -33,6 +34,8 @@ const Nav = () => {
           </a>
         </h1>
       </div>
+
+      <ThemeSwitcher />
 
       <ul className='Nav__Items'>
         {listItems.map((item, i) => (

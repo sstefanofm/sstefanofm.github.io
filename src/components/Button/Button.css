@@ -1,0 +1,13 @@
+.Button {
+  border: 2px solid #666;
+  border-left-color: #ccc;
+  border-top-color: #ccc;
+  outline: none;
+  padding: 7px;
+}
+
+.Button:active {
+  border-color: #ccc;
+  border-left-color: #666;
+  border-top-color: #666;
+}

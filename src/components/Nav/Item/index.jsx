@@ -1,5 +1,5 @@
 import './Item.css'
-import CheckIcon from '../../Icons/Check'
+import { Check } from '../../Icon'
 import { NavLink, matchPath, useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
@@ -9,7 +9,7 @@ const IconItemSelected = to => {
 
   if (isCurrentPath)
     return (
-      <CheckIcon
+      <Check
         width={16}
         height={16}
       />

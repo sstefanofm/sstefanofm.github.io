@@ -1,7 +1,8 @@
 .Nav {
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .Nav__Logo {
@@ -41,4 +42,35 @@
 
 .Nav__Items {
   float: right;
+}
+
+.Nav__ThemeSwitcher {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.ThemeSwitcher {
+  display: none;
+}
+
+.Sun,
+.Moon {
+  padding: 0.3em 0.8em;
+}
+
+.Sun--Active {
+  background-color: #fff;
+}
+
+.Sun--Active svg {
+  filter: invert(0%) sepia(90%) saturate(7500%) hue-rotate(166deg) brightness(89%) contrast(108%);
+}
+
+.Moon--Active {
+  background-color: #000;
+}
+
+.Moon--Active svg {
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(193deg) brightness(103%) contrast(103%);
 }
