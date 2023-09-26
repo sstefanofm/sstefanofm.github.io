@@ -1,8 +1,12 @@
 /* -- modifiers -- */
 
 /* theming */
-.Icon--LightTheme {
-  fill: #000;
+.Icon--Light {
+  filter: invert(0%) sepia(90%) saturate(7459%) hue-rotate(77deg) brightness(112%) contrast(111%);
+}
+
+.Icon--Dark {
+  filter: invert(100%) sepia(26%) saturate(1329%) hue-rotate(168deg) brightness(104%) contrast(112%);
 }
 
 /* animations */
