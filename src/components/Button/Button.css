@@ -11,3 +11,11 @@
   border-left-color: #666;
   border-top-color: #666;
 }
+
+.Button--Light {
+  background-color: blue;
+}
+
+.Button--Dark {
+  background-color: red;
+}
