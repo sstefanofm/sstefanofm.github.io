@@ -34,6 +34,7 @@ module.exports = {
     'no-unused-vars': ['warn'],
     camelcase: ['warn'],
     'one-var-declaration-per-line': ['warn', 'always'],
+    'react/prop-types': 'off',
   },
   settings: {
     react: {
