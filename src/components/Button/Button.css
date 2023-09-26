@@ -1,21 +1,35 @@
 .Button {
-  border: 2px solid #666;
-  border-left-color: #ccc;
-  border-top-color: #ccc;
   outline: none;
   padding: 7px;
+  border: 2px solid;
 }
 
-.Button:active {
-  border-color: #ccc;
-  border-left-color: #666;
-  border-top-color: #666;
+.Button:active > * {
+  transform: scale(0.9);
 }
 
 .Button--Light {
-  background-color: blue;
+  background-color: #e1dde1;
+  border-color: #777;
+  border-left-color: #eee;
+  border-top-color: #eee;
+}
+
+.Button--Light:active {
+  border-color: #eee;
+  border-left-color: #777;
+  border-top-color: #777;
 }
 
 .Button--Dark {
-  background-color: red;
+  background-color: #515151;
+  border-color: #252525;
+  border-left-color: #999;
+  border-top-color: #999;
+}
+
+.Button--Dark:active {
+  border-color: #999;
+  border-left-color: #252525;
+  border-top-color: #252525;
 }
