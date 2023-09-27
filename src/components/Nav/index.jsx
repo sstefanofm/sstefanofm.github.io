@@ -1,5 +1,5 @@
 import './Nav.css'
-import logo from './skull.png'
+import logo from './logo_256.png'
 import Item from './Item'
 import ThemeSwitcher from '../ThemeSwitcher'
 import ThemeContext from '../../context/ThemeContext'
