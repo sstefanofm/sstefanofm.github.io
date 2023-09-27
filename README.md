@@ -1,4 +1,4 @@
-<a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react'><img src='.github/title.svg' alt='sstefanofm.github.io' /></a>
+<a href='https://sstefanofm.github.io' target='_blank'><img src='.github/title.svg' alt='sstefanofm.github.io' /></a>
 
 <p>This is my portfolio repository, where I publish my projects and some other things...</p>
 
