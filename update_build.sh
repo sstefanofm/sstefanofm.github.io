@@ -4,7 +4,7 @@ repo='sstefanofm.github.io'
 build='build'
 
 rm -rf $build/
-react-scripts $build
+react-scripts build
 git clone git@github.com:sstefanofm/$repo.git
 mv $repo/.git* $build/
 rm -rf $repo/
