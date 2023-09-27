@@ -1,16 +1,20 @@
 import './Project.css'
-import PropTypes from 'prop-types'
+import ThemeContext from '../../../context/ThemeContext'
+
+import { useContext } from 'react'
 
 const Project = ({ name, description, src, href }) => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <a
-      className='Project'
+      className={`Project Project--${theme}`}
       href={href}
       target='_blank'
       rel='noreferrer'
     >
       <div className='Project__Header'>
-        <div className='Project__ImgContainer'>
+        <div className={`Project__ImgContainer Project__ImgContainer--${theme}`}>
           <img
             className='Project__Img'
             src={`/img/${src}`}
@@ -22,13 +26,6 @@ const Project = ({ name, description, src, href }) => {
       <div className='Project__Description'>{description}</div>
     </a>
   )
-}
-
-Project.propTypes = {
-  name: PropTypes.string,
-  description: PropTypes.string,
-  src: PropTypes.string,
-  href: PropTypes.string,
 }
 
 export default Project

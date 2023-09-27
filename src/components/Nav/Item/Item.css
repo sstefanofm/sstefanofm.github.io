@@ -3,7 +3,6 @@
 }
 
 .Item__NavLink {
-  color: #000;
   text-decoration: none;
   font-size: 1em;
   display: flex;
@@ -11,6 +10,22 @@
 }
 
 .Item__NavLink:hover {
-  color: #000;
   text-decoration: underline;
+}
+
+.Item__NavLink--Light {
+  color: #000;
+}
+
+.Item__NavLink--Light:hover {
+  color: #000;
+}
+
+.Item__NavLink--Dark {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.Item__NavLink--Dark:hover {
+  color: #fff;
 }

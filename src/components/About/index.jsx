@@ -3,8 +3,13 @@ import MainContent from '../MainContent'
 import ContentHeader from '../MainContent/ContentHeader'
 import { Activity } from '../Icon'
 import ContentBody from '../MainContent/ContentBody'
+import ThemeContext from '../../context/ThemeContext'
+
+import { useContext } from 'react'
 
 const About = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <MainContent>
       <ContentHeader title='About_me'>
@@ -16,14 +21,14 @@ const About = () => {
       </ContentHeader>
       <ContentBody>
         <div className='About'>
-          <aside className='AsideMeCard'>
+          <aside className={`AsideMeCard AsideMeCard--${theme}`}>
             <section>
               <h3 className='AsideMeCard__Title'>Stefano Federici Marsegani</h3>
               <p className='AsideMeCard__Description'>Self taught software developer</p>
             </section>
             <div>
               <img
-                className='AsideMeCard__Img'
+                className={`AsideMeCard__Img AsideMeCard__Img--${theme}`}
                 src='/img/me.jpg'
                 alt='Me'
               />

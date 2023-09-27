@@ -2,8 +2,13 @@ import './Nav.css'
 import logo from './skull.png'
 import Item from './Item'
 import ThemeSwitcher from '../ThemeSwitcher'
+import ThemeContext from '../../context/ThemeContext'
+
+import { useContext } from 'react'
 
 const Nav = () => {
+  const { theme } = useContext(ThemeContext)
+
   const listItems = [
     {
       name: 'home',
@@ -16,14 +21,14 @@ const Nav = () => {
   ]
 
   return (
-    <div className='Nav'>
+    <div className={`Nav Nav--${theme}`}>
       <div className='Nav__Logo'>
         <img
           src={logo}
           className='Nav__Img'
           alt='logo'
         />
-        <h1 className='Nav__Title'>
+        <h1 className={`Nav__Title Nav__Title--${theme}`}>
           <a
             className='Nav__Title__Link'
             href='https://github.com/sstefanofm'

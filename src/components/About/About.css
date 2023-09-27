@@ -11,22 +11,39 @@
 .AsideMeCard {
   font-family: 'CaskaydiaCove Italic';
   max-height: 30em;
-  border: 2px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(#fafafa 1px, transparent 3em), linear-gradient(to right, #fafafa 1px, #666 1px);
   background-size: 15px 15px;
   background-attachment: fixed;
   animation: moveBg 180s infinite;
+}
+
+.AsideMeCard--Light {
   box-shadow: 2px 2px 5px #666;
+  border: 2px solid #000;
+  background-image: linear-gradient(#fafafa 1px, transparent 3em), linear-gradient(to right, #fafafa 1px, #666 1px);
+}
+
+.AsideMeCard--Dark {
+  box-shadow: 2px 2px 5px #000;
+  border: 2px solid #fff;
+  background-image: linear-gradient(#111 1px, transparent 3em), linear-gradient(to right, #111 1px, #666 1px);
 }
 
 .AsideMeCard__Img {
-  border: 2px solid #000;
   width: 20em;
+}
+
+.AsideMeCard__Img--Light {
+  border: 2px solid #000;
   box-shadow: 2px 2px 5px #666;
+}
+
+.AsideMeCard__Img--Dark {
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 5px #000;
 }
 
 .AsideMeCard__Title,

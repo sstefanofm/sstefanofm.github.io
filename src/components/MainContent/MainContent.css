@@ -2,3 +2,16 @@ code {
   font-size: 1em;
   font-family: 'CaskaydiaCove', monospace;
 }
+
+.MainContent--Light {
+  color: #000;
+  background-color: #e1dde1;
+  border: 2px solid #000;
+}
+
+.MainContent--Dark {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background-color: #515151;
+  border: 2px solid #fff;
+}

@@ -1,23 +1,25 @@
 import './Item.css'
 import { Check } from '../../Icon'
+import ThemeContext from '../../../context/ThemeContext'
+
+import { useContext } from 'react'
 import { NavLink, matchPath, useLocation } from 'react-router-dom'
-import PropTypes from 'prop-types'
 
 const IconItemSelected = to => {
   const { pathname } = useLocation()
   const isCurrentPath = matchPath(to, pathname)
 
-  if (isCurrentPath)
-    return (
-      <Check
-        width={16}
-        height={16}
-      />
-    )
-  return undefined
+  return isCurrentPath ? (
+    <Check
+      width={16}
+      height={16}
+    />
+  ) : undefined
 }
 
 const Item = ({ name, to }) => {
+  const { theme } = useContext(ThemeContext)
+
   const activeStyle = {
     pointerEvents: 'none',
   }
@@ -25,7 +27,7 @@ const Item = ({ name, to }) => {
   return (
     <li className='Item'>
       <NavLink
-        className='Item__NavLink'
+        className={`Item__NavLink Item__NavLink--${theme}`}
         style={({ isActive }) => (isActive ? activeStyle : undefined)}
         to={to}
       >
@@ -36,11 +38,6 @@ const Item = ({ name, to }) => {
       </NavLink>
     </li>
   )
-}
-
-Item.propTypes = {
-  name: PropTypes.string,
-  to: PropTypes.string,
 }
 
 export default Item

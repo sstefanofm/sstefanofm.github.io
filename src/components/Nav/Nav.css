@@ -5,6 +5,16 @@
   align-items: start;
 }
 
+.Nav--Light {
+  background-color: #e1dde1;
+  border: 2px solid #000;
+}
+
+.Nav--Dark {
+  background-color: #515151;
+  border: 2px solid #fff;
+}
+
 .Nav__Logo {
   float: left;
   display: flex;
@@ -17,11 +27,19 @@
 }
 
 .Nav__Title {
-  color: #000;
   padding: 2.1em 0;
   cursor: pointer;
   font-size: 1.3em;
   width: 0;
+}
+
+.Nav__Title--Light {
+  color: #000;
+}
+
+.Nav__Title--Dark {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .Nav__Title:hover,

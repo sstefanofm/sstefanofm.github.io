@@ -1,8 +1,12 @@
+import { useContext } from 'react'
+import ThemeContext from '../../context/ThemeContext'
 import './MainContent.css'
 import PropTypes from 'prop-types'
 
 const MainContent = ({ children }) => {
-  return <main className='MainContent'>{children}</main>
+  const { theme } = useContext(ThemeContext)
+
+  return <main className={`MainContent MainContent--${theme}`}>{children}</main>
 }
 
 MainContent.propTypes = {

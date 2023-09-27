@@ -1,10 +1,10 @@
 import './Projects.css'
+import { projects as jsonProjects } from './projects'
+import Project from './Project'
 import MainContent from '../MainContent'
 import ContentHeader from '../MainContent/ContentHeader'
 import { Home } from '../Icon'
 import ContentBody from '../MainContent/ContentBody'
-import Project from './Project'
-import { projects as jsonProjects } from './projects'
 
 const Projects = () => {
   const { projects } = jsonProjects

@@ -1,13 +1,15 @@
 import './Icon.css'
 import ThemeContext from '../../context/ThemeContext'
+import { createModifiers } from './utils'
+
 import { useContext } from 'react'
 
-const Icon = ({ children, ...props }) => {
+const Icon = ({ modifiers, children, ...props }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
     <svg
-      className={`Icon--${theme}`}
+      className={`Icon--${theme} ${createModifiers(modifiers)}`}
       {...props}
     >
       {children}
