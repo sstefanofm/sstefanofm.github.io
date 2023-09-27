@@ -1,36 +1,35 @@
 .Nav {
-  overflow: hidden;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  border: 2px solid;
 }
 
 .Nav--Light {
+  border-color: #000;
   background-color: #e1dde1;
-  border: 2px solid #000;
 }
 
 .Nav--Dark {
+  border-color: #fff;
   background-color: #313131;
-  border: 2px solid #fff;
 }
 
 .Nav__Logo {
-  float: left;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .Nav__Img {
-  float: left;
-  width: 120px;
+  width: 65px;
 }
 
 .Nav__Title {
-  padding: 2.1em 0;
-  cursor: pointer;
-  font-size: 1.3em;
-  width: 0;
+  font-size: 1.25em;
+  margin-top: 5px;
+  padding-left: 5px;
+  font-family: 'CaskaydiaCove Italic';
 }
 
 .Nav__Title--Light {
@@ -39,56 +38,10 @@
 
 .Nav__Title--Dark {
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
-}
-
-.Nav__Title:hover,
-.Nav__Title:active {
-  text-shadow: 0px 0px 7px #e01058;
-}
-
-.Nav__Title__Link {
-  color: inherit;
-  text-decoration: none;
-  font-family: 'CaskaydiaCove Italic';
-}
-
-.Nav__Title__Link:hover {
-  color: inherit;
-  text-decoration: underline;
-}
-
-.Nav__Items {
-  float: right;
+  text-shadow: 2px 2px 0px #000;
 }
 
 .Nav__ThemeSwitcher {
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.ThemeSwitcher {
-  display: none;
-}
-
-.Sun,
-.Moon {
-  padding: 0.3em 0.8em;
-}
-
-.Sun--Active {
-  background-color: #fff;
-}
-
-.Sun--Active svg {
-  filter: invert(0%) sepia(90%) saturate(7500%) hue-rotate(166deg) brightness(89%) contrast(108%);
-}
-
-.Moon--Active {
-  background-color: #000;
-}
-
-.Moon--Active svg {
-  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(193deg) brightness(103%) contrast(103%);
+  position: absolute;
+  left: 50%;
 }

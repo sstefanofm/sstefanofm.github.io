@@ -25,34 +25,61 @@ const Nav = () => {
       <div className='Nav__Logo'>
         <img
           src={logo}
+          alt='Logo'
           className='Nav__Img'
-          alt='logo'
         />
-        <h1 className={`Nav__Title Nav__Title--${theme}`}>
-          <a
-            className='Nav__Title__Link'
-            href='https://github.com/sstefanofm'
-            target='_blank'
-            rel='noreferrer'
-          >
-            sstefanofm
-          </a>
-        </h1>
+        <h1 className={`Nav__Title Nav__Title--${theme}`}>sstefanofm</h1>
       </div>
 
-      <ThemeSwitcher />
+      <ThemeSwitcher classes='Nav__ThemeSwitcher' />
 
-      <ul className='Nav__Items'>
-        {listItems.map((item, i) => (
-          <Item
-            key={`${i}${item.name}`}
-            name={item.name}
-            to={item.to}
-          />
-        ))}
-      </ul>
+      <nav className='Nav__Links'>
+        <ul className='Nav__Items'>
+          {listItems.map((li, i) => (
+            <Item
+              key={`${i}-${li.name}`}
+              name={li.name}
+              to={li.to}
+            />
+          ))}
+        </ul>
+      </nav>
     </div>
   )
+
+  // return (
+  //   <div className={`Nav Nav--${theme}`}>
+  //     <div className='Nav__Logo'>
+  //       <img
+  //         src={logo}
+  //         className='Nav__Img'
+  //         alt='logo'
+  //       />
+  //       <h1 className={`Nav__Title Nav__Title--${theme}`}>
+  //         <a
+  //           className='Nav__Title__Link'
+  //           href='https://github.com/sstefanofm'
+  //           target='_blank'
+  //           rel='noreferrer'
+  //         >
+  //           sstefanofm
+  //         </a>
+  //       </h1>
+  //     </div>
+
+  //     <ThemeSwitcher />
+
+  //     <ul className='Nav__Items'>
+  //       {listItems.map((item, i) => (
+  //         <Item
+  //           key={`${i}${item.name}`}
+  //           name={item.name}
+  //           to={item.to}
+  //         />
+  //       ))}
+  //     </ul>
+  //   </div>
+  // )
 }
 
 export default Nav

@@ -6,7 +6,7 @@ import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
 
-const ThemeSwitcher = () => {
+const ThemeSwitcher = ({ classes }) => {
   const { theme, setTheme } = useContext(ThemeContext)
 
   if (theme === Theme.LIGHT) {
@@ -27,6 +27,7 @@ const ThemeSwitcher = () => {
           setTheme(Theme.DARK)
           changeBackground()
         }}
+        classes={classes}
       >
         <Moon
           width={30}
@@ -40,6 +41,7 @@ const ThemeSwitcher = () => {
         setTheme(Theme.LIGHT)
         changeBackground()
       }}
+      classes={classes}
     >
       <Sun
         width={30}
