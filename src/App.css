@@ -12,12 +12,21 @@ body {
   font-family: 'CaskaydiaCove', monospace;
   background-color: #666;
   opacity: 1;
-  background-image:
-    linear-gradient(#fafafa 1px, transparent 1px),
-    /* horizontal */ linear-gradient(to right, #fafafa 1px, #666 1px); /* vertical */
   background-size: 20px /* square width */ 20px /* square height */;
   background-attachment: fixed;
   animation: moveBg 180s infinite;
+}
+
+.Body--Light {
+  background-image:
+    linear-gradient(#ddd 2px, transparent 3em),
+    /* horizontal */ linear-gradient(to right, #ddd 2px, #303 1px); /* vertical */
+}
+
+.Body--Dark {
+  background-image:
+    linear-gradient(#000 2px, transparent 3em),
+    /* horizontal */ linear-gradient(to right, #000 2px, #868 1px) !important; /* vertical */
 }
 
 body > * {

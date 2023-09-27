@@ -22,14 +22,14 @@
 }
 
 .Button--Dark {
-  background-color: #515151;
-  border-color: #252525;
-  border-left-color: #999;
-  border-top-color: #999;
+  background-color: #313131;
+  border-color: #151515;
+  border-left-color: #777;
+  border-top-color: #777;
 }
 
 .Button--Dark:active {
-  border-color: #999;
-  border-left-color: #252525;
-  border-top-color: #252525;
+  border-color: #777;
+  border-left-color: #151515;
+  border-top-color: #151515;
 }
