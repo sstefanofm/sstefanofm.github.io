@@ -6,8 +6,7 @@
 }
 
 .GoHomeLink {
-  width: 135px;
-  color: #000;
+  width: 110px;
   text-decoration: none;
   font-size: 1em;
   display: flex;
@@ -15,6 +14,21 @@
 }
 
 .GoHomeLink:hover {
-  color: #000;
   text-decoration: underline;
+}
+
+.GoHomeLink--Light {
+  color: #000;
+}
+
+.GoHomeLink--Light:hover {
+  color: #000;
+}
+
+.GoHomeLink--Dark {
+  color: #fff;
+}
+
+.GoHomeLink--Dark:hover {
+  color: #fff;
 }

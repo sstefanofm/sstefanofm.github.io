@@ -1,12 +1,17 @@
-import '../Button/Button.css'
 import './NotFound.css'
 import MainContent from '../MainContent'
 import ContentHeader from '../MainContent/ContentHeader'
 import ContentBody from '../MainContent/ContentBody'
 import { Question, Home } from '../Icon'
+import Button from '../Button'
+import ThemeContext from '../../context/ThemeContext'
+
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 
 const NotFound = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <MainContent>
       <ContentHeader title='404'>
@@ -21,16 +26,18 @@ const NotFound = () => {
           <p>
             The requested URL <code>{location.pathname}</code> does not exist.
           </p>
-          <NavLink
-            className='Button GoHomeLink'
-            to='/'
-          >
-            <Home
-              width={20}
-              height={20}
-            />
-            <span>Go home</span>
-          </NavLink>
+          <Button onclick={() => {}}>
+            <NavLink
+              className={`GoHomeLink GoHomeLink--${theme}`}
+              to='/'
+            >
+              <Home
+                width={20}
+                height={20}
+              />
+              <span>Go home</span>
+            </NavLink>
+          </Button>
         </div>
       </ContentBody>
     </MainContent>
