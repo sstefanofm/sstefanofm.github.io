@@ -19,14 +19,14 @@ body {
 
 .Body--Light {
   background-image:
-    linear-gradient(#ddd 2px, transparent 3em),
-    /* horizontal */ linear-gradient(to right, #ddd 2px, #303 1px); /* vertical */
+    linear-gradient(#333 2px, transparent 0.5em),
+    /* horizontal */ linear-gradient(to right, #333 2px, #fa9afa 5em); /* vertical */
 }
 
 .Body--Dark {
   background-image:
-    linear-gradient(#000 2px, transparent 3em),
-    /* horizontal */ linear-gradient(to right, #000 2px, #868 1px) !important; /* vertical */
+    linear-gradient(#000 2px, transparent 0.5em),
+    /* horizontal */ linear-gradient(to right, #000 2px, #868 5em) !important; /* vertical */
 }
 
 body > * {
