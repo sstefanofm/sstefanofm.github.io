@@ -1,6 +1,6 @@
-import Projects from './components/Projects'
-import About from './components/About'
-import NotFound from './components/NotFound'
+import Projects from './pages/Projects'
+import About from './pages/About'
+import NotFound from './pages/NotFound'
 
 export const routes = [
   {

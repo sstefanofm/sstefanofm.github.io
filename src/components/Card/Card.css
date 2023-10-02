@@ -1,0 +1,18 @@
+.Card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Card--Light {
+  color: #000;
+  border-color: #000;
+  background-color: #e1dde1;
+}
+
+.Card--Dark {
+  color: #fff;
+  border-color: #fff;
+  background-color: #313131;
+  text-shadow: 1px 1px 1px #000;
+}

@@ -1,5 +1,5 @@
 import './Project.css'
-import ThemeContext from '../../../context/ThemeContext'
+import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
 

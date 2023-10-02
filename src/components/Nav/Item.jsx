@@ -1,6 +1,6 @@
 import './Item.css'
-import { Check } from '../../Icon'
-import ThemeContext from '../../../context/ThemeContext'
+import { Check } from '../Icon'
+import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
 import { NavLink, matchPath, useLocation } from 'react-router-dom'

@@ -39,6 +39,11 @@ body > * {
   margin: 1em 0;
 }
 
+code {
+  font-size: 1em;
+  font-family: 'CaskaydiaCove', monospace;
+}
+
 @keyframes moveBg {
   0% {
     background-position: 0% 0%;

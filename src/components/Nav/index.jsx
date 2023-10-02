@@ -1,6 +1,7 @@
 import './Nav.css'
-import logo from './logo_256.png'
+import logo from '../../assets/logo_256.png'
 import Item from './Item'
+import Card from '../Card'
 import ThemeSwitcher from '../ThemeSwitcher'
 import ThemeContext from '../../context/ThemeContext'
 
@@ -21,15 +22,23 @@ const Nav = () => {
   ]
 
   return (
-    <div className={`Nav Nav--${theme}`}>
-      <div className='Nav__Logo'>
+    <Card
+      row={true}
+      border={true}
+      classes='Nav'
+    >
+      <Card
+        row={true}
+        border={false}
+        classes='Nav__Logo'
+      >
         <img
           src={logo}
           alt='Logo'
           className='Nav__Img'
         />
         <h1 className={`Nav__Title Nav__Title--${theme}`}>sstefanofm</h1>
-      </div>
+      </Card>
 
       <ThemeSwitcher classes='Nav__ThemeSwitcher' />
 
@@ -44,7 +53,7 @@ const Nav = () => {
           ))}
         </ul>
       </nav>
-    </div>
+    </Card>
   )
 
   // return (

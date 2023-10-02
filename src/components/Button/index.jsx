@@ -1,9 +1,9 @@
 import './Button.css'
-
-import { useContext } from 'react'
 import ThemeContext from '../../context/ThemeContext'
 
-const Button = ({ onclick, classes, children }) => {
+import { useContext } from 'react'
+
+const Button = ({ onclick, classes = '', children }) => {
   const { theme } = useContext(ThemeContext)
 
   return (

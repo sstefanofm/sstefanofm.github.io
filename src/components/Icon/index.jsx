@@ -1,15 +1,15 @@
 import './Icon.css'
 import ThemeContext from '../../context/ThemeContext'
-import { createModifiers } from './utils'
+import { appendClasses } from '../../utils/appendClasses'
 
 import { useContext } from 'react'
 
-const Icon = ({ modifiers, children, ...props }) => {
+const Icon = ({ classes, children, ...props }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
     <svg
-      className={`Icon--${theme} ${createModifiers(modifiers)}`}
+      className={`Icon--${theme} ${appendClasses(classes)}`}
       {...props}
     >
       {children}
@@ -17,9 +17,9 @@ const Icon = ({ modifiers, children, ...props }) => {
   )
 }
 
-export const Activity = ({ modifiers, ...props }) => (
+export const Activity = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 16 16'
     {...props}
   >
@@ -30,9 +30,9 @@ export const Activity = ({ modifiers, ...props }) => (
   </Icon>
 )
 
-export const Check = ({ modifiers, ...props }) => (
+export const Check = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 16 16'
     {...props}
   >
@@ -40,9 +40,9 @@ export const Check = ({ modifiers, ...props }) => (
   </Icon>
 )
 
-export const Home = ({ modifiers, ...props }) => (
+export const Home = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 16 16'
     {...props}
   >
@@ -50,9 +50,9 @@ export const Home = ({ modifiers, ...props }) => (
   </Icon>
 )
 
-export const Moon = ({ modifiers, ...props }) => (
+export const Moon = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 32 32'
     {...props}
   >
@@ -74,9 +74,9 @@ export const Moon = ({ modifiers, ...props }) => (
   </Icon>
 )
 
-export const Question = ({ modifiers, ...props }) => (
+export const Question = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 16 16'
     {...props}
   >
@@ -86,9 +86,9 @@ export const Question = ({ modifiers, ...props }) => (
   </Icon>
 )
 
-export const Sun = ({ modifiers, ...props }) => (
+export const Sun = ({ classes, ...props }) => (
   <Icon
-    modifiers={modifiers}
+    classes={classes}
     viewBox='0 0 32 32'
     {...props}
   >

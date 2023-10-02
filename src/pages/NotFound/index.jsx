@@ -1,9 +1,7 @@
 import './NotFound.css'
-import MainContent from '../MainContent'
-import ContentHeader from '../MainContent/ContentHeader'
-import ContentBody from '../MainContent/ContentBody'
-import { Question, Home } from '../Icon'
-import Button from '../Button'
+import Content from '../../components/Content'
+import Button from '../../components/Button'
+import { Home, Question } from '../../components/Icon'
 import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
@@ -13,15 +11,15 @@ const NotFound = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <MainContent>
-      <ContentHeader title='404'>
+    <Content>
+      <Content.Header title='404'>
         <Question
           width={23}
           height={23}
-          modifiers={['GrimRotation', 'LightTheme']}
+          classes={['GrimRotation']}
         />
-      </ContentHeader>
-      <ContentBody>
+      </Content.Header>
+      <Content.Body>
         <div className='NotFound'>
           <p>
             The requested URL <code>{location.pathname}</code> does not exist.
@@ -34,13 +32,14 @@ const NotFound = () => {
               <Home
                 width={20}
                 height={20}
+                classes={[]}
               />
               <span>Go home</span>
             </NavLink>
           </Button>
         </div>
-      </ContentBody>
-    </MainContent>
+      </Content.Body>
+    </Content>
   )
 }
 

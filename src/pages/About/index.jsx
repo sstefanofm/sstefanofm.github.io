@@ -1,9 +1,7 @@
 import './About.css'
-import MainContent from '../MainContent'
-import ContentHeader from '../MainContent/ContentHeader'
-import { Activity } from '../Icon'
-import ContentBody from '../MainContent/ContentBody'
+import Content from '../../components/Content'
 import ThemeContext from '../../context/ThemeContext'
+import { Activity } from '../../components/Icon'
 
 import { useContext } from 'react'
 
@@ -11,15 +9,15 @@ const About = () => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <MainContent>
-      <ContentHeader title='About_me'>
+    <Content>
+      <Content.Header title='about_me'>
         <Activity
           width={23}
           height={23}
-          modifiers={['GrimRotation', 'LightTheme']}
+          classes={['GrimRotation']}
         />
-      </ContentHeader>
-      <ContentBody>
+      </Content.Header>
+      <Content.Body>
         <div className='About'>
           <aside className={`AsideMeCard AsideMeCard--${theme}`}>
             <section>
@@ -62,8 +60,8 @@ const About = () => {
             <p>The 3 most important coding principles: KISS, DRY, and Clean Code At All Costs.</p>
           </section>
         </div>
-      </ContentBody>
-    </MainContent>
+      </Content.Body>
+    </Content>
   )
 }
 

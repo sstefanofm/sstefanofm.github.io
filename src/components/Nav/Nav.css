@@ -1,22 +1,4 @@
-.Nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 2px solid;
-}
-
-.Nav--Light {
-  border-color: #000;
-  background-color: #e1dde1;
-}
-
-.Nav--Dark {
-  border-color: #fff;
-  background-color: #313131;
-}
-
 .Nav__Logo {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
