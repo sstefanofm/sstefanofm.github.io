@@ -43,17 +43,6 @@ const Nav = () => {
       <Menu>
         <ThemeSwitcher />
         <Menu.Burger options={listItems} />
-        {/* <nav className='Nav__Links'>
-          <ul className='Nav__Items'>
-            {listItems.map((li, i) => (
-              <Item
-                key={`${i}-${li.name}`}
-                name={li.name}
-                to={li.to}
-              />
-            ))}
-          </ul>
-        </nav> */}
       </Menu>
     </Card>
   )
