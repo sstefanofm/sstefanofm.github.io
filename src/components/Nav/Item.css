@@ -1,31 +1,31 @@
 .Item {
+  cursor: pointer;
   list-style-type: none;
-}
-
-.Item__NavLink {
+  border-bottom: 1px solid #aaa;
+  margin: 0 1px;
   text-decoration: none;
   font-size: 1em;
   display: flex;
   justify-content: space-between;
 }
 
-.Item__NavLink:hover {
+.Item:hover {
   text-decoration: underline;
 }
 
-.Item__NavLink--Light {
+.Item--Light {
   color: #000;
 }
 
-.Item__NavLink--Light:hover {
+.Item--Light:hover {
   color: #000;
 }
 
-.Item__NavLink--Dark {
+.Item--Dark {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
 
-.Item__NavLink--Dark:hover {
+.Item--Dark:hover {
   color: #fff;
 }

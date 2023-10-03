@@ -23,7 +23,21 @@
   text-shadow: 2px 2px 0px #000;
 }
 
-.Nav__ThemeSwitcher {
+/* .Nav__ThemeSwitcher {
   position: absolute;
-  left: 50%;
+  left: 48.9%;
+} */
+
+@media only screen and (max-width: 720px) {
+  .Nav {
+    align-items: center;
+  }
+
+  .Nav__Title {
+    display: none;
+  }
+
+  .Nav__ThemeSwitcher {
+    left: 46%;
+  }
 }

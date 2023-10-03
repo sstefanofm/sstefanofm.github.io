@@ -1,0 +1,21 @@
+.Menu > * {
+  margin: 7px;
+}
+
+.BurgerMenu__Options {
+  position: absolute;
+  z-index: 1;
+  width: 110px;
+}
+
+.BurgerMenu__Options--Hidden {
+  visibility: hidden;
+}
+
+.BurgerMenu__Options--Visible {
+  visibility: visible;
+}
+
+.BurgerMenu__Options > * {
+  padding: 5px;
+}

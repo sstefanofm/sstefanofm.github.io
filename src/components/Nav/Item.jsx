@@ -25,18 +25,16 @@ const Item = ({ name, to }) => {
   }
 
   return (
-    <li className='Item'>
-      <NavLink
-        className={`Item__NavLink Item__NavLink--${theme}`}
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
-        to={to}
-      >
-        <div>{IconItemSelected(to)}</div>
-        <div>
-          <span className='Item__Name'>{name}</span>
-        </div>
-      </NavLink>
-    </li>
+    <NavLink
+      className={`Item Item--${theme}`}
+      style={({ isActive }) => (isActive ? activeStyle : undefined)}
+      to={to}
+    >
+      <div>{IconItemSelected(to)}</div>
+      <div>
+        <span className='Item__Name'>{name}</span>
+      </div>
+    </NavLink>
   )
 }
 
