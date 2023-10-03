@@ -1,10 +1,10 @@
-<a href='https://sstefanofm.github.io' target='_blank'><img src='.github/title.svg' alt='sstefanofm.github.io' /></a>
+<a href='https://sstefanofm.github.io' target='_blank'><img src='https://raw.githubusercontent.com/sstefanofm/sstefanofm.github.io/dev/react/.github/title.svg' alt='sstefanofm.github.io' /></a>
 
 <p>This is my portfolio repository, where I publish my projects and some other things...</p>
 
-<a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='.github/source_code.svg' alt='source code' /></a>
+<a href='https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react' target='_blank'><img src='https://raw.githubusercontent.com/sstefanofm/sstefanofm.github.io/dev/react/.github/source_code.svg' alt='source code' /></a>
 
-<a href='https://linkedin.com/in/stefano-federici-marsegani' target='_blank'><img src='.github/me.svg' alt='Stefano Federici Marsegani' /></a>
+<a href='https://linkedin.com/in/stefano-federici-marsegani' target='_blank'><img src='https://raw.githubusercontent.com/sstefanofm/sstefanofm.github.io/dev/react/.github/me.svg' alt='Stefano Federici Marsegani' /></a>
 
 ```
 --|-------------------------------------------------------
@@ -21,7 +21,7 @@
 : _
 ```
 
-<a href='#'><img src='.github/tools.svg' alt='This portfolio was made with the following technologies' /></a>
+<a href='#'><img src='https://raw.githubusercontent.com/sstefanofm/sstefanofm.github.io/dev/react/.github/tools.svg' alt='This portfolio was made with the following technologies' /></a>
 
 [<img style='padding: 13px' height='43px' src='https://react.dev/favicon.ico' alt='React' />](https://react.dev)
 [<img style='padding: 13px' height='43px' src='https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png' alt='CSS' />](https://www.w3schools.com/Css/)
