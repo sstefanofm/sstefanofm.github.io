@@ -22,7 +22,7 @@ const Projects = () => {
             key={`${index}${p.name}`}
             name={p.name}
             description={p.description}
-            src={p.src}
+            imgsrc={p.imgsrc}
             href={p.href}
           />
         ))}
