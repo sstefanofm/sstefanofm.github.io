@@ -1,0 +1,29 @@
+.Topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  margin: 1px;
+}
+
+.Topbar--Light {
+  background: linear-gradient(to left, #abb2bf, #a8a);
+}
+
+.Topbar--Dark {
+  background: linear-gradient(to right, #333, #828);
+}
+
+.Topbar__Info {
+  display: flex;
+}
+
+.Topbar__Info > * {
+  margin-right: 1em;
+}
+
+.Topbar__Title {
+  margin: auto;
+  font-size: 1em;
+}

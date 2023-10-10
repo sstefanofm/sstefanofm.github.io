@@ -1,3 +1,7 @@
+.Nav {
+  padding: 1em;
+}
+
 .Nav__Logo {
   justify-content: center;
   align-items: center;

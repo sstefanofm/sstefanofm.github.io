@@ -3,6 +3,7 @@ import ThemeContext from '../../context/ThemeContext'
 import Button from '../Button'
 import Item from './Item'
 import Card from '../Card'
+import Topbar from '../Topbar'
 import { List, ViewList } from '../Icon'
 
 import { useContext, useState } from 'react'
@@ -39,12 +40,14 @@ Menu.Burger = ({ options = [{ name: '', to: '' }] }) => {
       <Card
         row={false}
         border={true}
-        topbar={true}
-        bind={{ setHidden }}
         classes={`BurgerMenu__Options BurgerMenu__Options--${theme} BurgerMenu__Options--${
           hidden ? 'Hidden' : 'Visible'
         }`}
       >
+        <Topbar
+          title={{ enabled: false }}
+          close={{ enabled: true, setState: setHidden }}
+        />
         {options.map((opt, i) => (
           <Item
             key={`${i}-${opt.name}`}
