@@ -7,3 +7,8 @@
 .ContentHeader__Title {
   font-size: 1.2em;
 }
+
+.ContentBody {
+  padding: 1em;
+  margin: auto;
+}
