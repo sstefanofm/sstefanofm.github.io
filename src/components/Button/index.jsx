@@ -3,13 +3,13 @@ import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
 
-const Button = ({ onclick, classes = '', isDisabled = false, children, ...props }) => {
+const Button = ({ onclick, classes = '', disabled = false, children, ...props }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
     <button
       onClick={onclick}
-      className={`Button Button--${theme} ${classes} ${isDisabled ? 'Button--Disabled' : ''}`}
+      className={`Button Button--${theme} ${classes} ${disabled ? 'Button--Disabled' : ''}`}
       {...props}
     >
       {children}

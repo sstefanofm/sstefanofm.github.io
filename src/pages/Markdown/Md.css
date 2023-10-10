@@ -1,0 +1,8 @@
+.Md {
+  display: block;
+  margin: auto;
+  border: 2px solid black;
+  padding: 1.5em;
+  background-color: #222;
+  color: #fff;
+}

@@ -32,7 +32,8 @@ const Topbar = ({
       <div className='Topbar__Buttons'>
         <Button
           onclick={() => close.setState(true)}
-          isDisabled={!close.enabled}
+          disabled={!close.enabled}
+          classes={`Topbar__Item Topbar__Item--${theme}`}
         >
           ×
         </Button>

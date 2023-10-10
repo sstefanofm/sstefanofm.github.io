@@ -1,5 +1,6 @@
 import './Content.css'
 import Card from '../Card'
+import Topbar from '../Topbar'
 
 const Content = ({ children }) => {
   return (
@@ -13,14 +14,13 @@ const Content = ({ children }) => {
   )
 }
 
-Content.Header = ({ title = 'header', children }) => (
+Content.Header = ({ title = 'header', extension = 'txt', children }) => (
   <Card
     row={true}
     border={false}
     classes='ContentHeader'
   >
-    <h2 className='ContentHeader__Title'>/{title.toLowerCase()}.txt</h2>
-    {children}
+    <Topbar title={{ enabled: true, text: title.toLowerCase(), extension: extension }}>{children}</Topbar>
   </Card>
 )
 
