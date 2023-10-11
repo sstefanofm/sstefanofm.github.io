@@ -5,7 +5,7 @@
   align-items: center;
   padding: 6px;
   margin: 1px;
-  width: 100%;
+  width: calc(100% - 2px);
 }
 
 .Topbar--Light {
@@ -13,7 +13,7 @@
 }
 
 .Topbar--Dark {
-  background: linear-gradient(to right, #333, #828);
+  background: linear-gradient(to left, #7b829f, #848);
 }
 
 .Topbar__Info {
@@ -29,15 +29,17 @@
   font-size: 1em;
 }
 
-.Topbar__Item {
+.Topbar__Buttons__Left,
+.Topbar__Buttons__Right {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 25px;
-  font-size: 1.2em;
+  flex-direction: row;
 }
 
-.Topbar__Item--Dark {
-  color: #fff;
+.Topbar__Buttons__Left > * {
+  font-size: 0.88em !important;
+  margin-right: 5px;
+}
+
+.Topbar__Buttons__Right > * {
+  margin-left: 5px;
 }

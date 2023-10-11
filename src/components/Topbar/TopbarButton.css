@@ -1,0 +1,12 @@
+.TopbarButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  font-size: 1.2em;
+}
+
+.TopbarButton--Dark {
+  color: #fff;
+}
