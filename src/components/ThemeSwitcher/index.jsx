@@ -27,13 +27,13 @@ const ThemeSwitcher = ({ classes }) => {
       classes={classes}
     >
       {theme === Theme.LIGHT ? (
-        <Moon
+        <Sun
           width={30}
           height={30}
           classes={[]}
         />
       ) : (
-        <Sun
+        <Moon
           width={30}
           height={30}
           classes={[]}
