@@ -18,6 +18,10 @@ Menu.Burger = ({ options = [{ name: '', to: '' }] }) => {
   const [hidden, setHidden] = useState(true)
   const { theme } = useContext(ThemeContext)
 
+  const hideMenu = () => {
+    setHidden(true)
+  }
+
   return (
     <>
       <Button
@@ -46,7 +50,7 @@ Menu.Burger = ({ options = [{ name: '', to: '' }] }) => {
       >
         <Topbar
           title={{ enabled: false }}
-          close={{ enabled: true, setState: setHidden }}
+          close={{ enabled: true, onclick: hideMenu }}
         />
         {options.map((opt, i) => (
           <Item
