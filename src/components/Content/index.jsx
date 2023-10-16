@@ -7,6 +7,7 @@ const Content = ({ children }) => {
     <Card
       row={false}
       border={true}
+      wrap={false}
       classes='Content'
     >
       {children}
@@ -18,6 +19,7 @@ Content.Header = ({ title = 'header', extension = 'txt', children }) => (
   <Card
     row={true}
     border={false}
+    wrap={true}
     classes='ContentHeader'
   >
     <Topbar title={{ enabled: true, text: title.toLowerCase(), extension: extension }}>{children}</Topbar>
@@ -28,6 +30,7 @@ Content.Body = ({ children }) => (
   <Card
     row={true}
     border={false}
+    wrap={true}
     classes='ContentBody'
   >
     {children}

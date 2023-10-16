@@ -5,4 +5,17 @@
   padding: 1.5em;
   background-color: #222;
   color: #fff;
+  max-width: 860px;
+}
+
+@media only screen and (max-width: 1485px) {
+  .Md {
+    width: 55vw;
+  }
+}
+
+@media only screen and (max-width: 755px) {
+  .Md {
+    width: 80vw;
+  }
 }
