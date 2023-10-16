@@ -40,7 +40,7 @@ export const Check = ({ classes, ...props }) => (
   </Icon>
 )
 
-export const Home = ({ classes, ...props }) => (
+export const CodeSlash = ({ classes, ...props }) => (
   <Icon
     classes={classes}
     viewBox='0 0 16 16'

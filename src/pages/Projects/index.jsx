@@ -1,7 +1,7 @@
 import './Projects.css'
 import Project from './Project'
 import Content from '../../components/Content'
-import { Home } from '../../components/Icon'
+import { CodeSlash } from '../../components/Icon'
 import { projects as jsonProjects } from '../../data/projects'
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <Content>
       <Content.Header title='projects'>
-        <Home
+        <CodeSlash
           width={23}
           height={23}
           classes={['GrimRotation']}

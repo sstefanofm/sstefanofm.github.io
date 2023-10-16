@@ -1,7 +1,7 @@
 import './NotFound.css'
 import Content from '../../components/Content'
 import Button from '../../components/Button'
-import { Home, Question } from '../../components/Icon'
+import { CodeSlash, Question } from '../../components/Icon'
 import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
@@ -29,7 +29,7 @@ const NotFound = () => {
               className={`GoHomeLink GoHomeLink--${theme}`}
               to='/'
             >
-              <Home
+              <CodeSlash
                 width={20}
                 height={20}
                 classes={[]}
