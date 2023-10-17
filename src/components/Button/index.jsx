@@ -3,7 +3,7 @@ import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'
 
-const Button = ({ onclick, classes = '', disabled = false, children, ...props }) => {
+export const Button = ({ onclick = () => {}, classes = '', disabled = false, children, ...props }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -17,4 +17,18 @@ const Button = ({ onclick, classes = '', disabled = false, children, ...props })
   )
 }
 
-export default Button
+export const AnchorButton = ({ href = 'https://example.com', classes = '', disabled = false, children, ...props }) => {
+  const { theme } = useContext(ThemeContext)
+
+  return (
+    <a
+      href={href}
+      target='_blank'
+      rel='noreferrer'
+      className={`Button Button--${theme} ${classes} ${disabled ? 'Button--Disabled' : ''}`}
+      {...props}
+    >
+      {children}
+    </a>
+  )
+}

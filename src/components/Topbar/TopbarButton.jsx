@@ -1,5 +1,5 @@
 import './TopbarButton.css'
-import Button from '../Button'
+import { Button } from '../Button'
 import ThemeContext from '../../context/ThemeContext'
 
 import { useContext } from 'react'

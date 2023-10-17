@@ -1,6 +1,6 @@
 import './NotFound.css'
 import Content from '../../components/Content'
-import Button from '../../components/Button'
+import { Button } from '../../components/Button'
 import { CodeSlash, Question } from '../../components/Icon'
 import ThemeContext from '../../context/ThemeContext'
 

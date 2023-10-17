@@ -1,5 +1,5 @@
 import './ThemeSwitcher.css'
-import Button from '../Button'
+import { Button } from '../Button'
 import { Sun, Moon } from '../Icon'
 import ThemeContext from '../../context/ThemeContext'
 import Theme from '../../context/theme'

@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 import Nav from './components/Nav'
 import ThemeContext from './context/ThemeContext'
 import Theme from './context/theme'
@@ -14,7 +15,7 @@ const App = () => {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <Nav />
       {useRoutes(routes) /* pages */}
-      {/* <Footer /> */}
+      <Footer />
     </ThemeContext.Provider>
   )
 }

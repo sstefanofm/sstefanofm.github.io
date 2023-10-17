@@ -1,6 +1,6 @@
 import './Menu.css'
 import ThemeContext from '../../context/ThemeContext'
-import Button from '../Button'
+import { Button } from '../Button'
 import Item from './Item'
 import Card from '../Card'
 import Topbar from '../Topbar'
