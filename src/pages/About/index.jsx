@@ -22,7 +22,7 @@ const About = () => {
           <aside className={`AsideMeCard AsideMeCard--${theme}`}>
             <section>
               <h3 className='AsideMeCard__Title'>Stefano Federici Marsegani</h3>
-              <p className='AsideMeCard__Description'>Self taught software developer</p>
+              <p className='AsideMeCard__Description'>Software developer</p>
             </section>
             <div>
               <img
@@ -57,7 +57,7 @@ const About = () => {
             <p>
               <i className='SectionAboutMe__Quote'>If you really want to understand, make it with C.</i>
             </p>
-            <p>The 3 most important coding principles: KISS, DRY, and Clean Code At All Costs.</p>
+            <p>My most important coding principles: KISS and aesthetics.</p>
           </section>
         </div>
       </Content.Body>
