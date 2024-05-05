@@ -2,6 +2,7 @@
   outline: none;
   padding: 7px;
   border: 2px solid;
+  border-radius: 5px;
 }
 
 .Button:active > * {

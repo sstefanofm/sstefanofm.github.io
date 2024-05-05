@@ -1,6 +1,7 @@
 import './Md.css'
+import ThemeContext from '../../context/ThemeContext'
 
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import MarkdownIt from 'markdown-it'
 import DOMPurify from 'dompurify'
 
@@ -8,6 +9,7 @@ const mdit = MarkdownIt('commonmark')
 
 const Md = ({ repoName = 'test' }) => {
   const [md, setMd] = useState('')
+  const { theme } = useContext(ThemeContext);
 
   const getMd = async (url = '') => {
     const response = await fetch(url)
@@ -20,7 +22,7 @@ const Md = ({ repoName = 'test' }) => {
 
   return (
     <div
-      className='Md'
+      className={`Md Md--${theme}`}
       dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(md) }}
     />
   )

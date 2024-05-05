@@ -3,9 +3,20 @@
   margin: auto;
   border: 2px solid black;
   padding: 1.5em;
-  background-color: #222;
   color: #fff;
   max-width: 860px;
+  border-radius: var(--card-border-radius);
+}
+
+.Md--Light {
+  border-color: #e1dde1;
+  text-shadow: 1px 1px 1px #000;
+  background-color: #666;
+}
+
+.Md--Dark {
+  border-color: #313131;
+  background-color: #222;
 }
 
 @media only screen and (max-width: 1485px) {

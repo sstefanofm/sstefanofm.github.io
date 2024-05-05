@@ -4,6 +4,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 0.9em;
+  border-radius: 10px;
 }
 
 .Project:hover,
@@ -59,6 +60,7 @@
   width: 15em;
   text-align: center;
   background-color: #000;
+  border-radius: 10px;
 }
 
 .Project__ImgContainer--Light {

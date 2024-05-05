@@ -1,3 +1,7 @@
+:root {
+  --card-border-radius: 10px;
+}
+
 @font-face {
   font-family: 'CaskaydiaCove';
   src: url(./fonts/CaskaydiaCoveNerdFont-Regular.woff);
