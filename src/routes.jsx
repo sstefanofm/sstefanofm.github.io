@@ -2,6 +2,7 @@ import Projects from './pages/Projects'
 import Markdown from './pages/Markdown'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
+import Js from './pages/Js'
 
 export const routes = [
   {
@@ -16,6 +17,10 @@ export const routes = [
         element: <Markdown />,
       },
     ],
+  },
+  {
+    path: 'js',
+    element: <Js />,
   },
   {
     path: 'about',
