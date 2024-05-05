@@ -1,13 +1,9 @@
-import ThemeContext from '../../context/ThemeContext'
+import BinaryTime from '../../components/BinaryTime'
 import Content from '../../components/Content'
 import { Brilliance } from '../../components/Icon'
 
-import { useContext } from 'react'
-import BinaryTime from '../../components/BinaryTime'
 
 const Js = () => {
-  const { theme } = useContext(ThemeContext)
-
   return (
     <Content>
       <Content.Header
