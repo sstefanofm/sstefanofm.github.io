@@ -1,6 +1,6 @@
 import BinaryTime from '../../components/BinaryTime'
 import Content from '../../components/Content'
-import { Brilliance } from '../../components/Icon'
+import { JavaScript } from '../../components/Icon'
 
 
 const Js = () => {
@@ -10,7 +10,7 @@ const Js = () => {
         title='Js'
         extension='js'
       >
-        <Brilliance
+        <JavaScript
           width={23}
           height={23}
           classes={['GrimRotation']}
