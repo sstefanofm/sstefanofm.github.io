@@ -17,16 +17,16 @@ body {
   animation: moveBg 180s infinite;
 }
 
-.Body--Light {
-  background-image:
-    linear-gradient(#333 2px, transparent 0.5em),
-    /* horizontal */ linear-gradient(to right, #333 2px, #fa9afa 5em); /* vertical */
-}
-
 .Body--Dark {
   background-image:
     linear-gradient(#000 2px, transparent 0.5em),
-    /* horizontal */ linear-gradient(to right, #000 2px, #868 5em) !important; /* vertical */
+    /* horizontal */ linear-gradient(to right, #000 2px, #888 5em); /* vertical */
+}
+
+.Body--Light {
+  background-image:
+    linear-gradient(#000 2px, transparent 0.5em),
+    /* horizontal */ linear-gradient(to right, #000 2px, #a8a 5em) !important; /* vertical */
 }
 
 body > * {

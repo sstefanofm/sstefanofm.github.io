@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.Item:last-child {
+  border-bottom: 0;
+}
+
 .Item:hover {
   text-decoration: underline;
 }

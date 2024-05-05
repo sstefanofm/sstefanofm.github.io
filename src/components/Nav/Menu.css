@@ -6,6 +6,8 @@
   position: absolute;
   z-index: 1;
   width: 110px;
+  padding: 2px;
+  border: 2px solid #000 !important;
 }
 
 .BurgerMenu__Options--Hidden {

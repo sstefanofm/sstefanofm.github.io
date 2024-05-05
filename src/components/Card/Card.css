@@ -1,17 +1,24 @@
 .Card {
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .Card--Light {
   color: #000;
-  border-color: #000;
+  border-color: #e1dde1 !important;
   background-color: #e1dde1;
+  box-shadow: 2px 2px 5px 2px #333;
 }
 
 .Card--Dark {
   color: #fff;
-  border-color: #fff;
+  border-color: #313131 !important;
   background-color: #313131;
   text-shadow: 1px 1px 1px #000;
+  box-shadow: 2px 2px 5px 2px #000;
+}
+
+.Card > .Card {
+  box-shadow: none;
 }
