@@ -2,7 +2,6 @@ import BinaryTime from '../../components/BinaryTime'
 import Content from '../../components/Content'
 import { JavaScript } from '../../components/Icon'
 
-
 const Js = () => {
   return (
     <Content>
@@ -13,7 +12,7 @@ const Js = () => {
         <JavaScript
           width={23}
           height={23}
-          classes={['GrimRotation']}
+          classes={['GrimRotation', 'Bordered']}
         />
       </Content.Header>
       <Content.Body>

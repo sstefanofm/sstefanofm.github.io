@@ -1,5 +1,3 @@
-import Card from '../Card'
-
 import { useEffect, useState } from 'react'
 
 const getBin = (n = 0) => (n >>> 0).toString(2)
