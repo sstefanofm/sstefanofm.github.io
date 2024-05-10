@@ -15,7 +15,13 @@ const BinaryTime = () => {
     return () => clearInterval(u)
   }, [])
 
-  return <>{binaryTime}</>
+  return <>{
+    binaryTime.split('').map(b => +b).map((b, i) => (
+      <div key={i}>
+        <code>{b}</code>
+      </div>
+    ))
+  }</>
 }
 
 export default BinaryTime
