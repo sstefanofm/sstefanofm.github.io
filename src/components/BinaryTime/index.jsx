@@ -17,9 +17,9 @@ const BinaryTime = () => {
 
   return <>{
     binaryTime.split('').map(b => +b).map((b, i) => (
-      <div key={i}>
-        <code>{b}</code>
-      </div>
+      b ?
+        <code key={i}>{b}</code> :
+        <span key={i}>{b}</span>
     ))
   }</>
 }
