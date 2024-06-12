@@ -55,7 +55,7 @@ const About = () => {
               in depth.
             </p>
             <p>
-              <i className='SectionAboutMe__Quote'>If you really want to understand, make it with C.</i>
+              <i className='SectionAboutMe__Quote'>If you really want to understand, make it from scratch.</i>
             </p>
             <p>My most important coding principles: KISS and aesthetics.</p>
           </section>
