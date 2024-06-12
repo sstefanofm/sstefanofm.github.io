@@ -18,7 +18,7 @@ body {
   opacity: 1;
   background-size: 20px /* square width */ 20px /* square height */;
   background-attachment: fixed;
-  animation: moveBg 180s infinite;
+  animation: moveBg 43s linear infinite reverse;
 }
 
 .Body--Dark {
@@ -57,7 +57,7 @@ code {
   }
 
   50% {
-    background-position: 50% 50%;
+    background-position: 0% 50%;
   }
 
   75% {
