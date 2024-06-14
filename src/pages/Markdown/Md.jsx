@@ -9,7 +9,7 @@ const mdit = MarkdownIt('commonmark')
 
 const Md = ({ repoName = 'test' }) => {
   const [md, setMd] = useState('')
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext)
 
   const getMd = async (url = '') => {
     const response = await fetch(url)
