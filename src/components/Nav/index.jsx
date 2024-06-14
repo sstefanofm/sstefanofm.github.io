@@ -4,22 +4,12 @@ import Menu from './Menu'
 import Card from '../Card'
 import ThemeSwitcher from '../ThemeSwitcher'
 import ThemeContext from '../../context/ThemeContext'
+import { menuNavigation } from '../../routes.jsx'
 
 import { useContext } from 'react'
 
 const Nav = () => {
   const { theme } = useContext(ThemeContext)
-
-  const listItems = [
-    {
-      name: 'home',
-      to: '/',
-    },
-    {
-      name: 'about',
-      to: '/about',
-    },
-  ]
 
   return (
     <Card
@@ -42,7 +32,7 @@ const Nav = () => {
 
       <Menu>
         <ThemeSwitcher />
-        <Menu.Burger options={listItems} />
+        <Menu.Burger options={menuNavigation} />
       </Menu>
     </Card>
   )

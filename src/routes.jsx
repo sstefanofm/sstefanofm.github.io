@@ -4,6 +4,21 @@ import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Js from './pages/Js'
 
+export const menuNavigation = [
+  {
+    name: 'home',
+    to: '/',
+  },
+  {
+    name: 'about',
+    to: '/about',
+  },
+  {
+    name: 'js',
+    to: '/js',
+  }
+]
+
 export const routes = [
   {
     path: '/',
