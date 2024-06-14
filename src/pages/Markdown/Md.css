@@ -9,6 +9,10 @@
   background-color: #222;
 }
 
+.Md img {
+  width: 100%;
+}
+
 .Md--Light {
   border-color: #e1dde1;
   text-shadow: 1px 1px 1px #000;
