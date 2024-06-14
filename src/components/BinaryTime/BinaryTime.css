@@ -1,0 +1,15 @@
+.BinaryTime {
+  text-justify: center;
+}
+
+.BinaryTime__Text {
+  margin: auto;
+  width: 31%;
+}
+
+.WorkInProgress {
+  width: 31%;
+  display: block;
+  border: 3px solid black;
+  margin: auto;
+}

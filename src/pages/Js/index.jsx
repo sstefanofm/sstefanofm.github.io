@@ -1,6 +1,7 @@
 import BinaryTime from '../../components/BinaryTime'
 import Content from '../../components/Content'
 import { JavaScript } from '../../components/Icon'
+import working from '../../assets/working.gif'
 
 const Js = () => {
   return (
