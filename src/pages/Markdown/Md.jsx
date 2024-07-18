@@ -1,5 +1,6 @@
 import './Md.css'
 import ThemeContext from '../../context/ThemeContext'
+import { projects } from '../../data/projects'
 
 import { useContext, useEffect, useState } from 'react'
 import MarkdownIt from 'markdown-it'
@@ -10,6 +11,10 @@ const mdit = MarkdownIt('commonmark')
 const Md = ({ repoName = 'test' }) => {
   const [md, setMd] = useState('')
   const { theme } = useContext(ThemeContext)
+  let imgFullSize = undefined //
+
+  if (repoName === projects.DOTFILES.name)
+    console.log(imgFullSize = 'Md__Img--FullSize')
 
   const getMd = async (url = '') => {
     const response = await fetch(url)
@@ -22,7 +27,7 @@ const Md = ({ repoName = 'test' }) => {
 
   return (
     <div
-      className={`Md Md--${theme}`}
+      className={`Md Md--${theme} ${imgFullSize}`}
       dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(md) }}
     />
   )

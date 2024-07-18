@@ -2,10 +2,11 @@ import './Projects.css'
 import Project from './Project'
 import Content from '../../components/Content'
 import { CodeSlash } from '../../components/Icon'
-import { projects as jsonProjects } from '../../data/projects'
+import { projects as projectsJson } from '../../data/projects'
 
 const Projects = () => {
-  const { projects } = jsonProjects
+  const projects = Object.keys(projectsJson)
+    .map(pk => projectsJson[pk])
 
   return (
     <Content>
