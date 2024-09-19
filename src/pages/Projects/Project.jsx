@@ -10,7 +10,7 @@ const Project = ({ name, description, imgsrc }) => {
   return (
     <NavLink
       className={`Project Project--${theme}`}
-      to={`/md/${name}`}
+      to={`/${name}`}
     >
       <div className='Project__Header'>
         <div className={`Project__ImgContainer Project__ImgContainer--${theme}`}>
@@ -20,7 +20,7 @@ const Project = ({ name, description, imgsrc }) => {
             alt={`${name} project image`}
           />
         </div>
-        <div className='Project__Name'>{name}</div>
+        <div className='Project__Name'>{name.slice(name.lastIndexOf('/'))}</div>
       </div>
       <div className='Project__Description'>{description}</div>
     </NavLink>

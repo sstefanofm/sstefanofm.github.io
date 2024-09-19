@@ -2,12 +2,9 @@ import './Projects.css'
 import Project from './Project'
 import Content from '../../components/Content'
 import { CodeSlash } from '../../components/Icon'
-import { projects as projectsJson } from '../../data/projects'
+import { getProjects } from '../../data/projects'
 
 const Projects = () => {
-  const projects = Object.keys(projectsJson)
-    .map(pk => projectsJson[pk])
-
   return (
     <Content>
       <Content.Header title='projects'>
@@ -18,7 +15,7 @@ const Projects = () => {
         />
       </Content.Header>
       <Content.Body>
-        {projects.map((p, index) => (
+        {getProjects().map((p, index) => (
           <Project
             key={`${index}${p.name}`}
             name={p.name}
