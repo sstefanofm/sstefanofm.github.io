@@ -19,7 +19,7 @@ export const projects = Object.freeze({
     'https://github.com/sstefanofm/dots',
   ),
   JAVASCRIPT: project(
-    'dots_logo.gif',
+    'js.png',
     'js',
     'Made with JavaScript',
     '/js'

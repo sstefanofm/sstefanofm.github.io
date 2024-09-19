@@ -22,7 +22,7 @@ const Project = ({ p = project() }) => {
             alt={`${path} project image`}
           />
         </div>
-        <div className='Project__Name'>{path.slice(path.lastIndexOf('/'))}</div>
+        <div className='Project__Name'>{path.slice(path.lastIndexOf('/') + 1)}</div>
       </div>
       <div className='Project__Description'>{description}</div>
     </NavLink>
