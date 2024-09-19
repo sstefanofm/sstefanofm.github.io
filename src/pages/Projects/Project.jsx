@@ -1,26 +1,28 @@
 import './Project.css'
 import ThemeContext from '../../context/ThemeContext'
+import { project } from '../../data/projects.js'
 
 import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Project = ({ name, description, imgsrc }) => {
+const Project = ({ p = project() }) => {
   const { theme } = useContext(ThemeContext)
+  const { imgsrc, path, description } = p
 
   return (
     <NavLink
       className={`Project Project--${theme}`}
-      to={`/${name}`}
+      to={`/${path}`}
     >
       <div className='Project__Header'>
         <div className={`Project__ImgContainer Project__ImgContainer--${theme}`}>
           <img
             className='Project__Img'
             src={`/img/${imgsrc}`}
-            alt={`${name} project image`}
+            alt={`${path} project image`}
           />
         </div>
-        <div className='Project__Name'>{name.slice(name.lastIndexOf('/'))}</div>
+        <div className='Project__Name'>{path.slice(path.lastIndexOf('/'))}</div>
       </div>
       <div className='Project__Description'>{description}</div>
     </NavLink>

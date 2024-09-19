@@ -17,11 +17,8 @@ const Projects = () => {
       <Content.Body>
         {getProjects().map((p, index) => (
           <Project
-            key={`${index}${p.name}`}
-            name={p.name}
-            description={p.description}
-            imgsrc={p.imgsrc}
-            href={p.href}
+            key={`${index}${p.path}`}
+            p={p}
           />
         ))}
       </Content.Body>

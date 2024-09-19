@@ -1,22 +1,29 @@
+export const project = (
+  imgsrc = '',
+  path = '',
+  description = '',
+  href = ''
+) => ({ imgsrc, path, description, href })
+
 export const projects = Object.freeze({
-  PORTFOLIO: {
-    imgsrc: 'logo_64.png',
-    name: 'md/sstefanofm.github.io',
-    description: 'This portfolio. Where I publish my projects and some other things :D',
-    href: 'https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react',
-  },
-  DOTFILES: {
-    imgsrc: 'dots_logo.gif',
-    name: 'md/dots',
-    description: 'My dotfiles (in progress...)',
-    href: 'https://github.com/sstefanofm/dots',
-  },
-  JAVASCRIPT: {
-    imgsrc: 'dots_logo.gif',
-    name: 'js',
-    description: 'Made with JavaScript',
-    href: '/js'
-  }
+  PORTFOLIO: project(
+    'logo_64.png',
+    'md/sstefanofm.github.io',
+    'This portfolio. Where I publish my projects and some other things :D',
+    'https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react',
+  ),
+  DOTFILES: project(
+    'dots_logo.gif',
+    'md/dots',
+    'My dotfiles (in progress...)',
+    'https://github.com/sstefanofm/dots',
+  ),
+  JAVASCRIPT: project(
+    'dots_logo.gif',
+    'js',
+    'Made with JavaScript',
+    '/js'
+  )
 })
 
 export const getProjects = () => Object.keys(projects)
