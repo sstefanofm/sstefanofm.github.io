@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 
 const Project = ({ p = project() }) => {
   const { theme } = useContext(ThemeContext)
-  const { imgsrc, path, description } = p
+  const { name, imgsrc, path, description } = p
 
   return (
     <NavLink
@@ -22,7 +22,7 @@ const Project = ({ p = project() }) => {
             alt={`${path} project image`}
           />
         </div>
-        <div className='Project__Name'>{path.slice(path.lastIndexOf('/') + 1)}</div>
+        <div className='Project__Name'>{name}</div>
       </div>
       <div className='Project__Description'>{description}</div>
     </NavLink>

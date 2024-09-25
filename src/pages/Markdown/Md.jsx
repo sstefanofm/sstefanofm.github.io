@@ -11,10 +11,10 @@ const mdit = MarkdownIt('commonmark')
 const Md = ({ repoName = 'test' }) => {
   const [md, setMd] = useState('')
   const { theme } = useContext(ThemeContext)
-  let imgFullSize = undefined //
+  let imgFullSize = ''
 
   if (repoName === projects.DOTFILES.name)
-    console.log(imgFullSize = 'Md__Img--FullSize')
+    imgFullSize += 'Md__Img--FullSize'
 
   const getMd = async (url = '') => {
     const response = await fetch(url)
