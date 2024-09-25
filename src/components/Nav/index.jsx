@@ -27,7 +27,12 @@ const Nav = () => {
           alt='Logo'
           className='Nav__Img'
         />
-        <h1 className={`Nav__Title Nav__Title--${theme}`}>sstefanofm</h1>
+        <a
+          href="http://sstefanofm.github.io"
+          className="Nav__Title"
+        >
+          <h1 className={`Nav__Title Nav__Title--${theme}`}>sstefanofm</h1>
+        </a>
       </Card>
 
       <Menu>
