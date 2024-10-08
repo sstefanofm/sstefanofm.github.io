@@ -1,18 +1,7 @@
-export const project = (
-  imgsrc = '',
-  path = '',
-  description = '',
-  href = ''
-) => {
+export const project = (imgsrc = '', path = '', description = '', href = '') => {
   const name = path.slice(path.lastIndexOf('/') + 1)
 
-  return({
-    name,
-    imgsrc,
-    path,
-    description,
-    href
-  })
+  return ({ name, imgsrc, path, description, href })
 }
 
 export const projects = Object.freeze({

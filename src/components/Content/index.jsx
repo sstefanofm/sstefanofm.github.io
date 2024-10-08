@@ -2,6 +2,8 @@ import './Content.css'
 import Card from '../Card'
 import Topbar from '../Topbar'
 
+import { useNavigate } from 'react-router-dom'
+
 const Content = ({ children }) => {
   return (
     <Card
@@ -15,16 +17,28 @@ const Content = ({ children }) => {
   )
 }
 
-Content.Header = ({ title = 'header', extension = 'txt', children }) => (
-  <Card
-    row={true}
-    border={false}
-    wrap={true}
-    classes='ContentHeader'
-  >
-    <Topbar title={{ enabled: true, text: title.toLowerCase(), extension: extension }}>{children}</Topbar>
-  </Card>
-)
+Content.Header = ({ title = 'header', extension = 'txt', children }) => {
+  /* TODO navigation */
+  const navigate = useNavigate()
+
+  const goBack = () => navigate(undefined)
+
+  return (
+    <Card
+      row={true}
+      border={false}
+      wrap={true}
+      classes='ContentHeader'
+    >
+      <Topbar
+        title={{ enabled: true, text: title.toLowerCase(), extension }}
+        back={{ enabled: true, onclick: goBack }}
+      >
+        {children}
+      </Topbar>
+    </Card>
+  )
+}
 
 Content.Body = ({ children }) => (
   <Card

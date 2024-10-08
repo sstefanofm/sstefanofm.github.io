@@ -16,10 +16,7 @@ const renderTitle = title => {
 const Topbar = ({
   title = { enabled: false, text: 'topbar', extension: 'txt' },
   back = { enabled: false, onclick: () => {} },
-  close = {
-    enabled: false,
-    onclick: () => {},
-  },
+  close = { enabled: false, onclick: () => {} },
   children,
 }) => {
   const { theme } = useContext(ThemeContext)
@@ -29,7 +26,7 @@ const Topbar = ({
       <div className='Topbar__Buttons__Left'>
         <TopbarButton
           visible={back.enabled}
-          setState={back.setState}
+          onclick={back.onclick}
         >
           &lt;-
         </TopbarButton>
