@@ -28,7 +28,7 @@ const Topbar = ({
           visible={back.enabled}
           onclick={back.onclick}
         >
-          &lt;-
+          &lt;~
         </TopbarButton>
       </div>
       <div className='Topbar__Info'>
