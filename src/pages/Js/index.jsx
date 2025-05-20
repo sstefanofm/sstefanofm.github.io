@@ -1,6 +1,8 @@
-import BinaryTime from '../../components/BinaryTime'
 import Content from '../../components/Content'
 import { JavaScript } from '../../components/Icon'
+
+import MeWhenCoding from '../../components/MeWhenCoding'
+import BinaryTime from '../../components/BinaryTime'
 
 const Js = () => {
   return (
@@ -16,6 +18,7 @@ const Js = () => {
         />
       </Content.Header>
       <Content.Body>
+        <MeWhenCoding />
         <BinaryTime />
       </Content.Body>
     </Content>

@@ -1,7 +1,5 @@
 import './BinaryTime.css'
 
-import working from '../../assets/working.gif'
-
 import { useEffect, useState } from 'react'
 
 const getBin = (n = 0) => (n >>> 0).toString(2)
@@ -20,11 +18,6 @@ const BinaryTime = () => {
   }, [])
 
   return <div className="BinaryTime">
-    <img
-      className="WorkInProgress"
-      src={working}
-      alt="work in progress"
-    />
     <div className="BinaryTime__Text">
     {
     binaryTime.split('').map(b => +b).map((b, i) => (
