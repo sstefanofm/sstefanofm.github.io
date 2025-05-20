@@ -32,7 +32,7 @@ Content.Header = ({ title = 'header', extension = 'txt', children }) => {
     >
       <Topbar
         title={{ enabled: true, text: title.toLowerCase(), extension }}
-        back={{ enabled: true, onclick: goBack }}
+        back={{ enabled: true }}
       >
         {children}
       </Topbar>

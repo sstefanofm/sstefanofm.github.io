@@ -1,6 +1,7 @@
 import './Topbar.css'
 import ThemeContext from '../../context/ThemeContext'
 import TopbarButton from './TopbarButton'
+import BackButton from './BackButton'
 
 import { useContext } from 'react'
 
@@ -15,7 +16,7 @@ const renderTitle = title => {
 
 const Topbar = ({
   title = { enabled: false, text: 'topbar', extension: 'txt' },
-  back = { enabled: false, onclick: () => {} },
+  back = { enabled: false },
   close = { enabled: false, onclick: () => {} },
   children,
 }) => {
@@ -24,12 +25,7 @@ const Topbar = ({
   return (
     <div className={`Topbar Topbar--${theme}`}>
       <div className='Topbar__Buttons__Left'>
-        <TopbarButton
-          visible={back.enabled}
-          onclick={back.onclick}
-        >
-          &lt;~
-        </TopbarButton>
+        <BackButton visible={back.enabled} />
       </div>
       <div className='Topbar__Info'>
         {children /* typically an icon */}
