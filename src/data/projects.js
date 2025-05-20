@@ -1,5 +1,5 @@
-export const project = (imgsrc = '', path = '', description = '', href = '') => {
-  const name = path.slice(path.lastIndexOf('/') + 1)
+export const project = (imgsrc = '', name = '', path = '', description = '', href = '') => {
+  // const name = path.slice(path.lastIndexOf('/') + 1)
 
   return ({ name, imgsrc, path, description, href })
 }
@@ -7,18 +7,21 @@ export const project = (imgsrc = '', path = '', description = '', href = '') => 
 export const projects = Object.freeze({
   PORTFOLIO: project(
     'logo_64.png',
+    'portfolio',
     'md/sstefanofm.github.io',
     'This portfolio. Where I publish my projects and some other things :D',
     'https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react',
   ),
   DOTFILES: project(
     'dots_logo.gif',
+    'dotfiles',
     'md/dots',
     'My dotfiles (in progress...)',
     'https://github.com/sstefanofm/dots',
   ),
   JAVASCRIPT: project(
     'js.png',
+    'JavaScript',
     'js',
     'Made with JavaScript',
     '/js'
