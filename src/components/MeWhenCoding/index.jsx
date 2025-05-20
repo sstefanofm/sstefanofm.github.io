@@ -1,11 +1,8 @@
-import working from '../../assets/working.gif'
+import ContentCard from '../ContentCard'
 
 const MeWhenCoding = () => {
-  return <img
-    className="WorkInProgress"
-    src={working}
-    alt="work in progress"
-  />
+  return (<ContentCard>
+  </ContentCard>)
 }
 
 export default MeWhenCoding
