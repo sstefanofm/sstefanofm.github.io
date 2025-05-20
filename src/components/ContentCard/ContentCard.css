@@ -12,17 +12,19 @@
   flex-direction: column;
   width: 40%;
   padding: 1em;
-  border: 1px solid rgba(22, 22, 22, 0.23);
+  /* border: 1px solid rgba(22, 22, 22, 0.23); */
+  border: 2px solid #111;
   border-radius: var(--card-border-radius);
-  box-shadow: 0px 0px 7px -2px #222;
 }
 
 .ContentCard__Cover--Light {
-  background: linear-gradient(to left, #abb2bf, #a8a);
+  background: linear-gradient(to left, #abb2bf, #ccc);
+  box-shadow: 0px 0px 7px -2px #222;
 }
 
 .ContentCard__Cover--Dark {
-  background: linear-gradient(to left, #7b829f, #848);
+  background: linear-gradient(to left, #7b829f, #777);
+  box-shadow: 0px 0px 7px -1px #000;
 }
 
 .ContentCard__Cover img {
