@@ -1,5 +1,8 @@
 import './ContentCard.css'
 import working from '../../assets/working.gif'
+import ThemeContext from '../../context/ThemeContext'
+
+import { useContext } from 'react'
 
 /* use this Card inside ContentBody */
 const ContentCard = ({ children }) => {
@@ -11,8 +14,10 @@ const ContentCard = ({ children }) => {
 }
 
 ContentCard.Cover = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className='ContentCard__Cover'>
+    <div className={`ContentCard__Cover ContentCard__Cover--${theme}`}>
       <img
         className="WorkInProgress"
         src={working}
