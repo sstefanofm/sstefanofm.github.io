@@ -16,7 +16,6 @@ const renderTitle = title => {
 
 const Topbar = ({
   title = { enabled: false, text: 'topbar', extension: 'txt' },
-  back = { enabled: false },
   close = { enabled: false, onclick: () => {} },
   children,
 }) => {
@@ -25,7 +24,7 @@ const Topbar = ({
   return (
     <div className={`Topbar Topbar--${theme}`}>
       <div className='Topbar__Buttons__Left'>
-        <BackButton visible={back.enabled} />
+        <BackButton />
       </div>
       <div className='Topbar__Info'>
         {children /* typically an icon */}
