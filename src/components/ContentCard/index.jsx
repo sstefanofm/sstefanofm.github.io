@@ -4,7 +4,7 @@ import working from '../../assets/working.gif'
 /* use this Card inside ContentBody */
 const ContentCard = ({ children }) => {
   return (
-    <div>
+    <div className='ContentCard'>
       {children}
     </div>
   )
@@ -12,17 +12,20 @@ const ContentCard = ({ children }) => {
 
 ContentCard.Cover = () => {
   return (
-    <img
-      className="WorkInProgress"
-      src={working}
-      alt="work in progress"
-    />
+    <div className='ContentCard__Cover'>
+      <img
+        className="WorkInProgress"
+        src={working}
+        alt="work in progress"
+      />
+      <span>This is me while i&apos;m coding</span>
+    </div>
   )
 }
 
 ContentCard.Content = () => {
   return (
-    <div>
+    <div className='ContentCard__Content'>
       <p>This is text bro</p>
     </div>
   )
