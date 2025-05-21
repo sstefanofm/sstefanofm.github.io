@@ -19,7 +19,6 @@ ContentCard.Cover = () => {
   return (
     <div className={`ContentCard__Cover ContentCard__Cover--${theme}`}>
       <img
-        className="WorkInProgress"
         src={working}
         alt="work in progress"
       />

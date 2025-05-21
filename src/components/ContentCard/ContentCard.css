@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
+  font-size: .8em;
 }
 
 .ContentCard__Cover {
@@ -29,17 +30,28 @@
 
 .ContentCard__Cover--Dark {
   border: var(--cc-border-dark);
-  background: linear-gradient(to right, #684e76, #7b728a);
+  background: linear-gradient(to right, #684e76, #2b226a22);
   box-shadow: var(--cc-box-shadow-dark);
 }
 
 .ContentCard__Cover img {
+  width: 31%;
+  display: block;
+  box-shadow: var(--cc-box-shadow-dark);
   border-radius: 7px;
+  margin: auto;
   width: 100%;
 }
 
+.ContentCard__Cover--Light img {
+  border: var(--cc-border-light);
+}
+
+.ContentCard__Cover--Dark img {
+  border: var(--cc-border-dark);
+}
+
 .ContentCard__Cover span {
-  font-size: .8em;
   text-align: center;
   padding-top: 10px;
 }
@@ -58,7 +70,7 @@
 }
 
 .ContentCard__Content--Dark {
-  background: #7b728a;
+  background: #2b226a22;
   border: var(--cc-border-dark);
   box-shadow: var(--cc-box-shadow-dark);
 }
