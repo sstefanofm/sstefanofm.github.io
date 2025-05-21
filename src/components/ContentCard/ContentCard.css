@@ -1,4 +1,8 @@
 .ContentCard {
+  --ccBoxShadowLight: 0px 0px 7px -2px #222;
+  --ccBoxShadowDark: 0px 0px 7px -1px #000;
+  --ccBorder: 2px solid #111;
+
   width: 90%;
   margin: 0 auto;
   padding: 1em;
@@ -13,18 +17,18 @@
   width: 40%;
   padding: 1em;
   /* border: 1px solid rgba(22, 22, 22, 0.23); */
-  border: 2px solid #111;
+  border: var(--ccBorder);
   border-radius: var(--card-border-radius);
 }
 
 .ContentCard__Cover--Light {
-  background: linear-gradient(to left, #abb2bf, #ccc);
-  box-shadow: 0px 0px 7px -2px #222;
+  background: linear-gradient(to right, #aa8ead, #abb2bf);
+  box-shadow: var(--ccBoxShadowLight);
 }
 
 .ContentCard__Cover--Dark {
-  background: linear-gradient(to left, #7b829f, #777);
-  box-shadow: 0px 0px 7px -1px #000;
+  background: linear-gradient(to right, #684e76, #7b829f);
+  box-shadow: var(--ccBoxShadowDark);
 }
 
 .ContentCard__Cover img {
@@ -39,4 +43,15 @@
 .ContentCard__Content {
   padding: 1em;
   flex: 1;
+  border: var(--ccBorder);
+  border-radius: var(--card-border-radius);
+  margin: 0 0 0 1em;
+}
+
+.ContentCard__Content--Light {
+  background: #abb2bf;
+}
+
+.ContentCard__Content--Dark {
+  background: #7b829f;
 }
