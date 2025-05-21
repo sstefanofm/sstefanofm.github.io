@@ -27,12 +27,12 @@ ContentCard.Cover = () => {
   )
 }
 
-ContentCard.Content = () => {
+ContentCard.Content = ({ children }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
     <div className={`ContentCard__Content ContentCard__Content--${theme}`}>
-      <p>This is text bro</p>
+      {children}
     </div>
   )
 }
