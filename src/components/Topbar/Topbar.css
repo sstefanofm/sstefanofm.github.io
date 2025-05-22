@@ -37,6 +37,14 @@
   width: 200px;
 }
 
+.Topbar__Buttons__Left {
+  justify-content: start;
+}
+
+.Topbar__Buttons__Right {
+  justify-content: end;
+}
+
 .Topbar__Buttons__Left > * {
   font-size: 0.88em !important;
   margin-right: 5px;

@@ -17,6 +17,7 @@ const renderTitle = title => {
 const Topbar = ({
   title = { enabled: false, text: 'topbar', extension: 'txt' },
   close = { enabled: false, onclick: () => {} },
+  back  = { enabled: true },
   children,
 }) => {
   const { theme } = useContext(ThemeContext)
@@ -24,7 +25,7 @@ const Topbar = ({
   return (
     <div className={`Topbar Topbar--${theme}`}>
       <div className='Topbar__Buttons__Left'>
-        <BackButton />
+        <BackButton visible={back.enabled} />
       </div>
       <div className='Topbar__Info'>
         {children /* typically an icon */}

@@ -51,6 +51,7 @@ Menu.Burger = ({ options = [{ name: '', to: '' }] }) => {
         <Topbar
           title={{ enabled: false }}
           close={{ enabled: true, onclick: hideMenu }}
+          back={{ enabled: false }}
         />
         {options.map((opt, i) => (
           <Item
