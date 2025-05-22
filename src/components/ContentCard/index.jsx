@@ -18,11 +18,13 @@ ContentCard.Cover = () => {
 
   return (
     <div className={`ContentCard__Cover ContentCard__Cover--${theme}`}>
-      <img
-        src={working}
-        alt="work in progress"
-      />
-      <span>This is me while i&apos;m coding</span>
+      <div>
+        <img
+          src={working}
+          alt="work in progress"
+        />
+        <span>This is me while i&apos;m coding</span>
+      </div>
     </div>
   )
 }
