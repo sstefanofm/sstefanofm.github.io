@@ -23,12 +23,21 @@ const BackButton = () => {
     navigate(BackNavigation[currentPath.toUpperCase()])
   }
 
+  const translateNav = (path) => {
+    switch (BackNavigation[currentPath.toUpperCase()]) {
+      case '/':
+        return 'home'
+    }
+  }
+
+  if (!currentPath)
+    return <></>
   return (
     <TopbarButton
-      visible={!!currentPath}
+      visible={true}
       onclick={goBackTo}
     >
-      &lt;~
+      &lt;~ {translateNav(currentPath)}
     </TopbarButton>
   )
 }

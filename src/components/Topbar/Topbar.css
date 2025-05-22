@@ -34,6 +34,7 @@
 .Topbar__Buttons__Right {
   display: flex;
   flex-direction: row;
+  width: 200px;
 }
 
 .Topbar__Buttons__Left > * {
