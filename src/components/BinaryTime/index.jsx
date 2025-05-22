@@ -1,4 +1,5 @@
 import './BinaryTime.css'
+import ContentCard from '../ContentCard'
 
 import { useEffect, useState } from 'react'
 
@@ -17,17 +18,21 @@ const BinaryTime = () => {
     return () => clearInterval(u)
   }, [])
 
-  return <div className="BinaryTime">
-    <div className="BinaryTime__Text">
-    {
-    binaryTime.split('').map(b => +b).map((b, i) => (
-      b ?
-        <code key={i}>{b}</code> :
-        <span key={i}>{b}</span>
-    ))
-    }
-    </div>
-  </div>
+  return (
+    <ContentCard>
+      <ContentCard.Content>
+        <div className='BinaryTime'>
+          <div className='BinaryTime__Bits'>
+            {binaryTime.split('').map(b => +b).map((b, i) => (
+              b ?
+                <code key={i}>{b}</code> :
+                <span key={i}>{b}</span>
+            ))}
+          </div>
+        </div>
+      </ContentCard.Content>
+    </ContentCard>
+  )
 }
 
 export default BinaryTime

@@ -10,7 +10,7 @@ const BackNavigation = Object.freeze({
     ABOUT: '/',
 })
 
-const BackButton = () => {
+const BackButton = ({ visible = false }) => {
   const location = useLocation()
   const navigate = useNavigate()
   const [currentPath, setCurrentPath] = useState('')
@@ -23,12 +23,21 @@ const BackButton = () => {
     navigate(BackNavigation[currentPath.toUpperCase()])
   }
 
+  const translateNav = (path) => {
+    switch (BackNavigation[currentPath.toUpperCase()]) {
+      case '/':
+        return 'home'
+    }
+  }
+
+  if (!currentPath)
+    return <></>
   return (
     <TopbarButton
-      visible={!!currentPath}
+      visible={visible}
       onclick={goBackTo}
     >
-      &lt;~
+      &lt;~ {translateNav(currentPath)}
     </TopbarButton>
   )
 }

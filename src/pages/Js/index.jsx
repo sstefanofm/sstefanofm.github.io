@@ -17,7 +17,7 @@ const Js = () => {
           classes={['GrimRotation', 'Bordered']}
         />
       </Content.Header>
-      <Content.Body>
+      <Content.Body row={false}>
         <MeWhenCoding />
         <BinaryTime />
       </Content.Body>
