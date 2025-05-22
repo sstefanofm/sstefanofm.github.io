@@ -1,9 +1,5 @@
 .BinaryTime {
-  text-justify: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-
-.BinaryTime__Text {
-  margin: auto;
-  width: 31%;
-}
-
