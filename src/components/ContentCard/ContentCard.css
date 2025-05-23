@@ -64,6 +64,8 @@
 }
 
 .ContentCard__Content {
+  width: 100%;
+  overflow: scroll;
   padding: 1em;
   flex: 1;
   border-radius: var(--card-border-radius);
