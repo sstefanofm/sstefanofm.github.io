@@ -1,5 +1,25 @@
 .BinaryTime {
+  --bit-border: 1px solid #000;
+  --bit-border-radius: 4px;
+
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.BinaryTime__Bits > * {
+  border: var(--bit-border);
+  border-left: 0;
+  padding: 2px 5px;
+}
+
+.BinaryTime__Bits > *:nth-child(1) {
+  border-left: var(--bit-border);
+  border-top-left-radius: var(--bit-border-radius);
+  border-bottom-left-radius: var(--bit-border-radius);
+}
+
+.BinaryTime__Bits > *:last-child {
+  border-top-right-radius: var(--bit-border-radius);
+  border-bottom-right-radius: var(--bit-border-radius);
 }
