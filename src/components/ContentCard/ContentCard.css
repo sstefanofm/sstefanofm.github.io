@@ -7,6 +7,7 @@
   width: 90%;
   margin: 1em auto;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1em;
   font-size: .9em;
@@ -17,7 +18,7 @@
 }
 
 .ContentCard__Cover {
-  flex: 0 0 40%;
+  flex: 0 0;
   min-width: 250px;
   display: flex;
   flex-direction: column;
@@ -43,12 +44,10 @@
 }
 
 .ContentCard__Cover img {
-  width: 31%;
   display: block;
   box-shadow: var(--cc-box-shadow-dark);
   border-radius: 7px;
   margin: auto;
-  width: 100%;
 }
 
 .ContentCard__Cover--Light img {
@@ -68,6 +67,9 @@
   flex: 1;
   padding: 1em;
   border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  height: 0%;
 }
 
 .ContentCard__Content--Light {
