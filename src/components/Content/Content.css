@@ -12,6 +12,7 @@
 .ContentBody {
   padding: 1em;
   margin: auto;
+  width: 100%;
 }
 
 @media only screen and (max-width: 755px) {
