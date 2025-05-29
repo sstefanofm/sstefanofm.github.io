@@ -22,13 +22,11 @@ const BinaryTime = () => {
     <ContentCard>
       <ContentCard.Content>
         <div className='BinaryTime'>
-          <div className='BinaryTime__Bits'>
-            {binaryTime.split('').map(b => +b).map((b, i) => (
-              b ?
-                <code key={i}>{b}</code> :
-                <span key={i}>{b}</span>
-            ))}
-          </div>
+          {binaryTime.split('').map(b => +b).map((b, i) => (
+            b ?
+              <code key={i}>{b}</code> :
+              <span key={i}>{b}</span>
+          ))}
         </div>
       </ContentCard.Content>
     </ContentCard>
