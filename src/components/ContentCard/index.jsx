@@ -12,11 +12,14 @@ const ContentCard = ({ children }) => {
   )
 }
 
-ContentCard.Cover = ({ children }) => {
+ContentCard.Cover = ({ children, height }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={`ContentCard__Cover ContentCard__Cover--${theme}`}>
+    <div
+      className={`ContentCard__Cover ContentCard__Cover--${theme}`}
+      style={{ height }}
+    >
       {children}
     </div>
   )

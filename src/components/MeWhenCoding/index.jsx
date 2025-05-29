@@ -5,7 +5,7 @@ import ContentCard from '../ContentCard'
 const MeWhenCoding = () => {
   return (
     <ContentCard>
-      <ContentCard.Cover>
+      <ContentCard.Cover height={320}>
         <div className='MeWhenCoding__CoverContainer'>
           <img
             src={working}
