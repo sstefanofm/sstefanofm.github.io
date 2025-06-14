@@ -3,9 +3,23 @@
   text-decoration: none;
   font-size: .8em;
   border-radius: 7.5px;
-  background: radial-gradient(circle at center, #b090c044, #e0e0f044, transparent 200%);
-  border: 1px solid #99999944;
+  border: 1px solid;
+  transition: 260ms;
+}
+
+.Project:hover {
+  transition: 80ms;
+}
+
+.Project--Light {
   color: #000;
+  border-color: #99999944;
+  background: radial-gradient(circle at center, #b090c044, #e0e0f044, transparent 200%);
+}
+
+.Project--Light:hover {
+  color: #000;
+  border-color: #999999bb;
 }
 
 .Project__Header {
