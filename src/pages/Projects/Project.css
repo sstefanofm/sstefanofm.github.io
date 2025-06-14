@@ -22,6 +22,25 @@
   border-color: #999999bb;
 }
 
+.Project--Light:active {
+  border-color: #444;
+}
+
+.Project--Dark {
+  border-color: #99999944;
+  background: radial-gradient(circle at center, #b090d033, #e0e0f033, transparent 220%);
+  color: white;
+}
+
+.Project--Dark:hover {
+  color: white;
+  border-color: #999999dd;
+}
+
+.Project--Dark:active {
+  border-color: #e0e0e0;
+}
+
 .Project__Header {
   font-family: 'CaskaydiaCove Italic';
   display: flex;
