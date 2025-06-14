@@ -1,102 +1,41 @@
 .Project {
-  width: 46%;
-  margin: 1.8%;
-  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
   text-decoration: none;
-  font-size: 0.9em;
-  border-radius: 7px;
-  position: relative;
-}
-
-.Project:hover,
-.Project:active {
-  top: 2px;
-}
-
-.Project--Light {
+  font-size: .8em;
+  border-radius: 7.5px;
+  background: radial-gradient(circle at center, #b090c044, #e0e0f044, transparent 200%);
+  border: 1px solid #99999944;
   color: #000;
-  box-shadow: 0px 2px 5px #000;
-}
-
-.Project--Light:hover,
-.Project--Light:active {
-  color: #000;
-  box-shadow: 0px 0px 5px #666;
-}
-
-.Project--Dark {
-  color: #fff;
-  box-shadow: 0px 2px 5px #000;
-}
-
-.Project--Dark:hover,
-.Project--Dark:active {
-  color: #fff;
-  box-shadow: 0px 0px 5px #000;
 }
 
 .Project__Header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.Project__Header,
-.Project__Description {
-  padding: 1em;
-}
-
-.Project--Light:hover .Project__ImgContainer,
-.Project--Light:active .Project__ImgContainer {
-  box-shadow: 0px 0px 3px 1px #000;
-}
-
-.Project--Dark:hover .Project__ImgContainer,
-.Project--Dark:active .Project__ImgContainer {
-  box-shadow: 0px 0px 3px 1px #000;
+  font-family: 'CaskaydiaCove Italic';
+  border-radius: 7.5px;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  width: 140px;
 }
 
 .Project__ImgContainer {
-  height: 5.5em;
-  width: 10em;
-  text-align: center;
-  background-color: #000;
-  overflow: hidden;
-  border: 1px solid #000;
-  border-radius: 6px;
-  box-shadow: 0px 0px 5px 1px #000;
+  width: 100%;
 }
 
 .Project__Img {
-  height: 100%;
   width: 100%;
   object-fit: contain;
+  background-color: #333;
+}
+
+.Project__Description {
+  flex: 1;
+  white-space: wrap;
   overflow: hidden;
-  border-radius: 5px;
-}
-
-.Project__Name {
-  font-family: 'CaskaydiaCove Italic';
-}
-
-@media only screen and (max-width: 1200px) {
-  .Project {
-    width: 98%;
-    position: relative;
-    top: 0;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .Project__Header,
-  .Project__Description {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Project__Name {
-    font-size: 1.2em;
-  }
+  text-overflow: ellipsis;
 }
