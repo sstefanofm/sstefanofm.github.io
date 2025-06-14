@@ -28,6 +28,7 @@
 .Topbar__Title {
   margin: auto;
   font-size: 1em;
+  white-space: nowrap;
 }
 
 .Topbar__Buttons__Left,

@@ -1,3 +1,4 @@
+import './BackButton.css'
 import TopbarButton from './TopbarButton'
 
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -37,7 +38,7 @@ const BackButton = ({ visible = false }) => {
       visible={visible}
       onclick={goBackTo}
     >
-      &lt;~ {translateNav(currentPath)}
+      &lt;~<span className='BackButton__Text'>&nbsp;{translateNav(currentPath)}</span>
     </TopbarButton>
   )
 }
