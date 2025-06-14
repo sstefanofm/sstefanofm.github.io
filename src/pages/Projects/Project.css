@@ -1,9 +1,4 @@
 .Project {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 1em;
   padding: 1em;
   text-decoration: none;
   font-size: .8em;
@@ -15,27 +10,17 @@
 
 .Project__Header {
   font-family: 'CaskaydiaCove Italic';
-  border-radius: 7.5px;
-  background-color: #333;
-  color: white;
-  overflow: hidden;
-  text-align: center;
-  width: 140px;
-}
-
-.Project__ImgContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .Project__Img {
-  width: 100%;
-  object-fit: contain;
-  background-color: #333;
+  height: 30px;
 }
 
 .Project__Description {
-  flex: 1;
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-top: 1em;
 }
