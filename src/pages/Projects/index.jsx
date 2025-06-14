@@ -15,12 +15,14 @@ const Projects = () => {
         />
       </Content.Header>
       <Content.Body>
-        {getProjects().map((p, index) => (
-          <Project
-            key={`${index}${p.path}`}
-            p={p}
-          />
-        ))}
+        <div className='Projects'>
+          {getProjects().map((p, index) => (
+            <Project
+              key={`${index}${p.path}`}
+              p={p}
+            />
+          ))}
+        </div>
       </Content.Body>
     </Content>
   )
