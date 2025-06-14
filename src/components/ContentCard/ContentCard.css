@@ -1,8 +1,8 @@
 .ContentCard {
-  --cc-box-shadow-light: 0px 0px 7px -2px #222;
+  --cc-box-shadow-light: 0px 0px 7px -3px #222;
   --cc-box-shadow-dark: 0px 0px 7px -1px #000;
-  --cc-border-light: 1px solid #111;
-  --cc-border-dark: 2px solid #111;
+  --cc-border-light: 1px solid #ffffff55;
+  --cc-border-dark: 1px solid #88888866;
 
   width: 90%;
   margin: 1em auto;
@@ -33,13 +33,13 @@
 
 .ContentCard__Cover--Light {
   border: var(--cc-border-light);
-  background: linear-gradient(to right, #aa8ead, #abb2bf);
+  background: linear-gradient(to right, #ba8ecd66, #abb2bf66);
   box-shadow: var(--cc-box-shadow-light);
 }
 
 .ContentCard__Cover--Dark {
   border: var(--cc-border-dark);
-  background: linear-gradient(to right, #684e76, #2b226a22);
+  background: linear-gradient(to right, #684e7644, #7b829f44);
   box-shadow: var(--cc-box-shadow-dark);
 }
 
@@ -51,11 +51,13 @@
 }
 
 .ContentCard__Cover--Light img {
-  border: var(--cc-border-light);
+  /* border: var(--cc-border-light); */
+  box-shadow: var(--cc-box-shadow-dark);
 }
 
 .ContentCard__Cover--Dark img {
-  border: var(--cc-border-dark);
+  /* border: var(--cc-border-dark); */
+  box-shadow: var(--cc-box-shadow-dark);
 }
 
 .ContentCard__Cover span {
@@ -73,13 +75,13 @@
 }
 
 .ContentCard__Content--Light {
-  background: #abb2bf;
+  background: #abb2bf66;
   border: var(--cc-border-light);
   box-shadow: var(--cc-box-shadow-light);
 }
 
 .ContentCard__Content--Dark {
-  background: #2b226a22;
+  background: #7b829f44;
   border: var(--cc-border-dark);
   box-shadow: var(--cc-box-shadow-dark);
 }
