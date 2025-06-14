@@ -28,12 +28,22 @@
 .Topbar__Title {
   margin: auto;
   font-size: 1em;
+  white-space: nowrap;
 }
 
 .Topbar__Buttons__Left,
 .Topbar__Buttons__Right {
   display: flex;
   flex-direction: row;
+  width: 200px;
+}
+
+.Topbar__Buttons__Left {
+  justify-content: start;
+}
+
+.Topbar__Buttons__Right {
+  justify-content: end;
 }
 
 .Topbar__Buttons__Left > * {

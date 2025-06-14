@@ -30,9 +30,9 @@ Content.Header = ({ title = 'header', extension = 'txt', children }) => {
   )
 }
 
-Content.Body = ({ children }) => (
+Content.Body = ({ children, row = true }) => (
   <Card
-    row={true}
+    row={row}
     border={false}
     wrap={true}
     classes='ContentBody'

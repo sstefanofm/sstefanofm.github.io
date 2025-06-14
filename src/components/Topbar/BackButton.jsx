@@ -1,3 +1,4 @@
+import './BackButton.css'
 import TopbarButton from './TopbarButton'
 
 import { useLocation, useNavigate } from 'react-router-dom'
@@ -10,7 +11,7 @@ const BackNavigation = Object.freeze({
     ABOUT: '/',
 })
 
-const BackButton = () => {
+const BackButton = ({ visible = false }) => {
   const location = useLocation()
   const navigate = useNavigate()
   const [currentPath, setCurrentPath] = useState('')
@@ -23,12 +24,21 @@ const BackButton = () => {
     navigate(BackNavigation[currentPath.toUpperCase()])
   }
 
+  const translateNav = (path) => {
+    switch (BackNavigation[currentPath.toUpperCase()]) {
+      case '/':
+        return 'home'
+    }
+  }
+
+  if (!currentPath)
+    return <></>
   return (
     <TopbarButton
-      visible={!!currentPath}
+      visible={visible}
       onclick={goBackTo}
     >
-      &lt;~
+      &lt;~<span className='BackButton__Text'>&nbsp;{translateNav(currentPath)}</span>
     </TopbarButton>
   )
 }

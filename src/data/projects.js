@@ -13,14 +13,14 @@ export const projects = Object.freeze({
     'https://github.com/sstefanofm/sstefanofm.github.io/tree/dev/react',
   ),
   DOTFILES: project(
-    'dots_logo.gif',
+    'linux_logo.svg',
     'dotfiles',
     'md/dots',
     'My dotfiles (in progress...)',
     'https://github.com/sstefanofm/dots',
   ),
   JAVASCRIPT: project(
-    'js.png',
+    'javascript_logo.svg',
     'JavaScript',
     'js',
     'Made with JavaScript',
