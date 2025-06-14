@@ -1,0 +1,5 @@
+@media screen and (max-width: 470px) {
+  .BackButton__Text {
+    display: none;
+  }
+}

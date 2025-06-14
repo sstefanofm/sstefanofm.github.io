@@ -4,6 +4,7 @@
   align-items: center;
   height: 25px;
   font-size: 1.2em;
+  white-space: nowrap;
 }
 
 .TopbarButton--Dark {
