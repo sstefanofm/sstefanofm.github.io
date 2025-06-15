@@ -8,3 +8,9 @@
 .Projects__Title {
   font-size: 1.2em;
 }
+
+@media screen and (max-width: 400px) {
+  .Projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
