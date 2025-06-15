@@ -39,7 +39,16 @@ const Markdown = () => {
           </ContentCard.Cover>
           <ContentCard.Content>
             {project.description}
-            <Button>Go to repository</Button>
+            <div className='Markdown__GoToRepo'>
+              <Button>
+                <a
+                  className='GoToRepo'
+                  href={`https://github.com/sstefanofm/${repoName}`}
+                  target='_blank'
+                  rel='noreferrer'
+                >Go to repository</a>
+              </Button>
+            </div>
           </ContentCard.Content>
         </ContentCard>
 
