@@ -14,3 +14,19 @@
   width: 130%;
   height: 100%;
 }
+
+.GoToRepo--Light {
+  color: #111;
+}
+
+.GoToRepo--Light:hover {
+  color: purple;
+}
+
+.GoToRepo--Dark {
+  color: white;
+}
+
+.GoToRepo--Dark:hover {
+  color: #f8f;
+}

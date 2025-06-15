@@ -5,10 +5,13 @@ import ContentCard from '../../components/ContentCard'
 import { Button } from '../../components/Button'
 import { Brilliance } from '../../components/Icon'
 import { getProjectByRepoName } from '../../data/projects'
+import ThemeContext from '../../context/ThemeContext'
 
 import { useParams } from 'react-router-dom'
+import { useContext } from 'react'
 
 const Markdown = () => {
+  const { theme } = useContext(ThemeContext)
   let { repoName } = useParams()
   const project = getProjectByRepoName(repoName)
 
@@ -42,7 +45,7 @@ const Markdown = () => {
             <div className='Markdown__GoToRepo'>
               <Button>
                 <a
-                  className='GoToRepo'
+                  className={`GoToRepo GoToRepo--${theme}`}
                   href={`https://github.com/sstefanofm/${repoName}`}
                   target='_blank'
                   rel='noreferrer'
