@@ -4,6 +4,9 @@ export const project = (imgsrc = '', name = '', path = '', description = '', hre
   return ({ name, imgsrc, path, description, href })
 }
 
+export const getProjectByRepoName = (name = '') =>
+  Object.values(projects).find(p => p.path === 'md/' + name)
+
 export const projects = Object.freeze({
   PORTFOLIO: project(
     'logo_64.png',

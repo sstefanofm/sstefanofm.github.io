@@ -12,13 +12,13 @@ const ContentCard = ({ children }) => {
   )
 }
 
-ContentCard.Cover = ({ children, height, widthPerc }) => {
+ContentCard.Cover = ({ children, height, widthPerc, imgBorders = true, minWidth = 'unset' }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
     <div
-      className={`ContentCard__Cover ContentCard__Cover--${theme}`}
-      style={{ height, width: widthPerc + '%' }}
+      className={`ContentCard__Cover ContentCard__Cover--${theme} ${imgBorders ? '' : 'ContentCard__Cover--NoBorderImg'}`}
+      style={{ height, width: widthPerc + '%', minWidth: minWidth + 'px' }}
     >
       {children}
     </div>
