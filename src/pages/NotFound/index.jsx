@@ -2,7 +2,7 @@ import './NotFound.css'
 import Content from '../../components/Content'
 import { Button } from '../../components/Button'
 import { CodeSlash, Question } from '../../components/Icon'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 
 import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'

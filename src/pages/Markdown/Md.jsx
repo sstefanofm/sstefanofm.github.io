@@ -1,5 +1,5 @@
 import './Md.css'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import { projects } from '../../data/projects'
 
 import { useContext, useEffect, useState } from 'react'

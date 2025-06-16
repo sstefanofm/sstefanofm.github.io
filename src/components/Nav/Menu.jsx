@@ -1,5 +1,5 @@
 import './Menu.css'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import { Button } from '../Button'
 import Item from './Item'
 import Card from '../Card'

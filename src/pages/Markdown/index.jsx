@@ -5,7 +5,7 @@ import ContentCard from '../../components/ContentCard'
 import { Button } from '../../components/Button'
 import { Brilliance } from '../../components/Icon'
 import { getProjectByRepoName } from '../../data/projects'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 
 import { useParams } from 'react-router-dom'
 import { useContext } from 'react'

@@ -1,7 +1,7 @@
 import './ThemeSwitcher.css'
 import { Button } from '../Button'
 import { Sun, Moon } from '../Icon'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import Theme from '../../context/theme'
 
 import { useContext } from 'react'

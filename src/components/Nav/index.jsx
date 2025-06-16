@@ -3,7 +3,7 @@ import logo from '../../assets/logo_256.png'
 import Menu from './Menu'
 import Card from '../Card'
 import ThemeSwitcher from '../ThemeSwitcher'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import { menuNavigation } from '../../routes.jsx'
 
 import { useContext } from 'react'

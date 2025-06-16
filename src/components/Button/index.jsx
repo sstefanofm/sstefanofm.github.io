@@ -1,5 +1,5 @@
 import './Button.css'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 
 import { useContext } from 'react'
 

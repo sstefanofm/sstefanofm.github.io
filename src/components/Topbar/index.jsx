@@ -1,5 +1,5 @@
 import './Topbar.css'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import TopbarButton from './TopbarButton'
 import BackButton from './BackButton'
 

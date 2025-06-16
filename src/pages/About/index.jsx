@@ -1,6 +1,6 @@
 import './About.css'
 import Content from '../../components/Content'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import { Activity } from '../../components/Icon'
 
 import { useContext } from 'react'

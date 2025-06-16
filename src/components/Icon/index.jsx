@@ -1,5 +1,5 @@
 import './Icon.css'
-import ThemeContext from '../../context/ThemeContext'
+import { ThemeContext } from '../../context/ThemeProvider'
 import { appendClasses } from '../../utils/appendClasses'
 
 import { useContext } from 'react'
