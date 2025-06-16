@@ -18,10 +18,15 @@ const ThemeSwitcher = ({ classes }) => {
     body.classList.toggle(`Body--${Theme.DARK}`)
   }
 
+  const saveTheme = (theme) =>
+    localStorage.setItem('theme', theme)
+
   return (
     <Button
       onclick={() => {
-        setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)
+        const newTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT 
+        setTheme(newTheme)
+        saveTheme(newTheme)
         changeBackground()
       }}
       classes={classes}
