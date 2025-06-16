@@ -6,7 +6,21 @@ export const ThemeContext = createContext(Theme.LIGHT)
 
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    return Theme.LIGHT
+    let preferredTheme = Theme.LIGHT
+
+    try {
+      const savedTheme = localStorage.getItem('theme')
+
+      if (!savedTheme)
+        preferredTheme = window.matchMedia('(prefers-color-scheme: dark)')
+          .matches ? Theme.DARK : Theme.LIGHT
+      else
+        preferredTheme = savedTheme
+    } catch {
+      console.log('Error getting preferred user theme. Using default.')
+    }
+
+    return preferredTheme
   })
 
   return (
