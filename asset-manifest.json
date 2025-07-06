@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fe4629e.css",
-    "main.js": "/static/js/main.1a703d11.js",
+    "main.css": "/static/css/main.c4e64e59.css",
+    "main.js": "/static/js/main.30765ba7.js",
     "static/media/working.gif": "/static/media/working.ed07bcd0eac09c259bac.gif",
     "static/media/CaskaydiaCoveNerdFont-Regular.woff": "/static/media/CaskaydiaCoveNerdFont-Regular.687f6051efb22e9ccc50.woff",
     "static/media/CaskaydiaCoveNerdFont-Italic.woff": "/static/media/CaskaydiaCoveNerdFont-Italic.fa5288414b397f2e8071.woff",
     "static/media/logo_256.png": "/static/media/logo_256.15dc12aaf322e26ca3e1.png",
     "index.html": "/index.html",
-    "main.1fe4629e.css.map": "/static/css/main.1fe4629e.css.map",
-    "main.1a703d11.js.map": "/static/js/main.1a703d11.js.map"
+    "main.c4e64e59.css.map": "/static/css/main.c4e64e59.css.map",
+    "main.30765ba7.js.map": "/static/js/main.30765ba7.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fe4629e.css",
-    "static/js/main.1a703d11.js"
+    "static/css/main.c4e64e59.css",
+    "static/js/main.30765ba7.js"
   ]
 }
