@@ -100,3 +100,9 @@
     min-width: 300px !important;
   }
 }
+
+@media (max-width: 550px) {
+  .ContentCard__Cover {
+    min-width: 100px !important;
+  }
+}
