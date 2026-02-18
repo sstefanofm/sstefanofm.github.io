@@ -1,3 +1,14 @@
+.Pokemon__Picker__Buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pokemon__Picker__Button--Dark {
+  color: white;
+}
+
 .Pokemon__SplashArt {
   object-fit: cover;
   max-width: 400px;
