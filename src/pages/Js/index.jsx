@@ -3,6 +3,7 @@ import { JavaScript } from '../../components/Icon'
 
 import MeWhenCoding from '../../components/MeWhenCoding'
 import BinaryTime from '../../components/BinaryTime'
+import Pokemon from '../../components/Pokemon'
 
 const Js = () => {
   return (
@@ -20,6 +21,7 @@ const Js = () => {
       <Content.Body row={false}>
         <MeWhenCoding />
         <BinaryTime />
+        <Pokemon />
       </Content.Body>
     </Content>
   )
