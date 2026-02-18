@@ -76,6 +76,8 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  width: 88%;
+  overflow: hidden;
 }
 
 .ContentCard__Content--Light {
@@ -101,8 +103,9 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 430px) {
   .ContentCard__Cover {
-    min-width: 100px !important;
+    min-width: 200px !important;
+    height: auto !important;
   }
 }
