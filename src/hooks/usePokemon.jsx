@@ -17,6 +17,7 @@ export const usePokemon = (pokemonId = 63 /* 63 abra */) => {
 
       const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${apiPokemon.id}.png`
 
+      /* preload image in memory */
       await new Promise((resolve) => {
         const img = new Image()
         img.src = imageUrl

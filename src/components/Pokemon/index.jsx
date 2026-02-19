@@ -1,4 +1,5 @@
 import './Pokemon.css'
+import pokeball from '../../assets/pokeball.png'
 import ContentCard from '../ContentCard'
 import { Button } from '../Button'
 import { ThemeContext } from '../../context/ThemeProvider'
@@ -24,7 +25,7 @@ const Pokemon = () => {
   return (
     <ContentCard>
       <ContentCard.Content>
-        <h3>{pokemon.name}</h3>
+        <h3 className='Pokemon__Name'>{pokemon.name}</h3>
         {isAbra && (
           <>
             <p>My favourite Pokémon is Abra.</p>
@@ -51,11 +52,19 @@ const Pokemon = () => {
         </div>
       </ContentCard.Content>
       <ContentCard.Cover imgBorders={false}>
-        <img
-          className='Pokemon__SplashArt'
-          src={pokemon.imageUrl}
-          alt={`Displaying Pokémon #${counter}`}
-        />
+        {isLoading ?
+          <img
+            src={pokeball}
+            className='Pokemon__LoadingPokeball'
+            alt={`Loading Pokémon #${counter}`}
+          />
+          :
+          <img
+            className='Pokemon__SplashArt'
+            src={pokemon.imageUrl}
+            alt={`Displaying Pokémon #${counter}`}
+          />
+        }
       </ContentCard.Cover>
     </ContentCard>
   )
