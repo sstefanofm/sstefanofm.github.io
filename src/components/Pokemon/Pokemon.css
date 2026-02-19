@@ -5,8 +5,18 @@
   align-items: center;
 }
 
+.Pokemon__Picker__Button {
+  transition: 300ms;
+}
+
 .Pokemon__Picker__Button--Dark {
   color: white;
+}
+
+.Pokemon__Picker__Button--Disabled {
+  background-color: #333;
+  color: red;
+  cursor: not-allowed !important;
 }
 
 .Pokemon__SplashArt {
