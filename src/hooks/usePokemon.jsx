@@ -11,15 +11,29 @@ export const usePokemon = (pokemonId = 63 /* 63 abra */) => {
   const getPokemon = async () => {
     setIsLoading(true)
 
-    const response = await fetch(baseUrl + pokemonId)
-    const apiPokemon = await response.json()
+    try {
+      const response = await fetch(baseUrl + pokemonId)
+      const apiPokemon = await response.json()
 
-    setPokemon({
-      id: apiPokemon.id,
-      name: capitalize(apiPokemon.name),
-      imageUrl: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${apiPokemon.id}.png`,
-    })
-    setIsLoading(false)
+      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${apiPokemon.id}.png`
+
+      await new Promise((resolve) => {
+        const img = new Image()
+        img.src = imageUrl
+        img.onload = resolve
+        img.onerror = resolve /* resolve too */
+      })
+
+      setPokemon({
+        id: apiPokemon.id,
+        name: capitalize(apiPokemon.name),
+        imageUrl,
+      })
+    } catch (err) {
+      setPokemon({})
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   useEffect(() => {

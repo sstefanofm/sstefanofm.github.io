@@ -7,9 +7,16 @@ import { usePokemon } from '../../hooks/usePokemon'
 
 import { useContext } from 'react'
 
+const START_POKEMON = 63 /* Abra 63 */
+const MAX_POKEMON = 1025
+
 const Pokemon = () => {
   const { theme } = useContext(ThemeContext)
-  const { counter, incrementCounter, decrementCounter } = useCounter(63 /* Abra 63 */)
+  const { counter, incrementCounter, decrementCounter } = useCounter(
+    START_POKEMON,
+    true,
+    MAX_POKEMON,
+  )
   const { pokemon, isLoading, isAbra } = usePokemon(counter)
 
   const pokemonPickerButtonClasses = `Pokemon__Picker__Button Pokemon__Picker__Button--${theme} ${isLoading ? 'Pokemon__Picker__Button--Disabled' : ''}`
