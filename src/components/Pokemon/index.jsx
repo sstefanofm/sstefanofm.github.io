@@ -25,8 +25,10 @@ const Pokemon = () => {
 
   useEffect(() => {
     const updateCounterTimeout = setTimeout(() => {
-      if (!isNaN(Number(inputValue)))
-        setCounter(inputValue)
+      try {
+        if (!isNaN(Number(inputValue)) && inputValue !== '')
+          setCounter(inputValue)
+      } catch {;}
     }, 7_7_7)
 
     return () => clearTimeout(updateCounterTimeout)
@@ -65,7 +67,7 @@ const Pokemon = () => {
               max={MAX_POKEMON}
               step={1}
               value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
+              onChange={(e) => setInputValue(e.target.value.trim())}
             />
             <Button
               onclick={incrementCounter}
