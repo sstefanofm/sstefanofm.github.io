@@ -29,7 +29,7 @@ const Pokemon = () => {
     }, 7_7_7)
 
     return () => clearTimeout(updateCounterTimeout)
-  }, [inputValue])
+  }, [inputValue, setCounter])
 
   useEffect(() => {
     setInputValue(counter)
