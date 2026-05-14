@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
-const ABRA_ID = 63
+export const ABRA_ID = 63
 
 export const usePokemon = (pokemonId = ABRA_ID) => {
   const [pokemon, setPokemon] = useState({})

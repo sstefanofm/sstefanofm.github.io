@@ -5,11 +5,11 @@ import Input from '../Input'
 import { Button } from '../Button'
 import { ThemeContext } from '../../context/ThemeProvider'
 import { useCounter } from '../../hooks/useCounter'
-import { usePokemon } from '../../hooks/usePokemon'
+import { usePokemon, ABRA_ID } from '../../hooks/usePokemon'
 
-import { useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 
-const START_POKEMON = 63 /* Abra 63 */
+const START_POKEMON = ABRA_ID /* Abra 63 */
 const MIN_POKEMON = 1
 const MAX_POKEMON = 1025
 
@@ -21,6 +21,19 @@ const Pokemon = () => {
     MAX_POKEMON,
   )
   const { pokemon, isLoading, isAbra } = usePokemon(counter)
+  const [inputValue, setInputValue] = useState(counter)
+
+  useEffect(() => {
+    const updateCounterTimeout = setTimeout(() => {
+      setCounter(inputValue)
+    }, 7_7_7)
+
+    return () => clearTimeout(updateCounterTimeout)
+  }, [inputValue])
+
+  useEffect(() => {
+    setInputValue(counter)
+  }, [counter])
 
   const pokemonPickerButtonClasses = `Pokemon__Picker__Button Pokemon__Picker__Button--${theme} ${isLoading ? 'Pokemon__Picker__Button--Disabled' : ''}`
 
@@ -50,8 +63,8 @@ const Pokemon = () => {
               min={MIN_POKEMON}
               max={MAX_POKEMON}
               step={1}
-              value={counter}
-              onChange={(e) => setCounter(e.target.value)}
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
             />
             <Button
               onclick={incrementCounter}
