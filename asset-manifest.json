@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.831fbcae.css",
-    "main.js": "/static/js/main.7d05798f.js",
+    "main.css": "/static/css/main.a2bfb0f0.css",
+    "main.js": "/static/js/main.3c7b3d5c.js",
     "static/media/working.gif": "/static/media/working.ed07bcd0eac09c259bac.gif",
     "static/media/CaskaydiaCoveNerdFont-Regular.woff": "/static/media/CaskaydiaCoveNerdFont-Regular.687f6051efb22e9ccc50.woff",
     "static/media/CaskaydiaCoveNerdFont-Italic.woff": "/static/media/CaskaydiaCoveNerdFont-Italic.fa5288414b397f2e8071.woff",
     "static/media/pokeball.png": "/static/media/pokeball.bcfc63cbb276db7c6d3c.png",
     "static/media/logo_256.png": "/static/media/logo_256.15dc12aaf322e26ca3e1.png",
     "index.html": "/index.html",
-    "main.831fbcae.css.map": "/static/css/main.831fbcae.css.map",
-    "main.7d05798f.js.map": "/static/js/main.7d05798f.js.map"
+    "main.a2bfb0f0.css.map": "/static/css/main.a2bfb0f0.css.map",
+    "main.3c7b3d5c.js.map": "/static/js/main.3c7b3d5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.831fbcae.css",
-    "static/js/main.7d05798f.js"
+    "static/css/main.a2bfb0f0.css",
+    "static/js/main.3c7b3d5c.js"
   ]
 }
