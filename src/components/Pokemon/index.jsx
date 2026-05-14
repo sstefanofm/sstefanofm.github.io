@@ -8,6 +8,7 @@ import { useCounter } from '../../hooks/useCounter'
 import { usePokemon, ABRA_ID } from '../../hooks/usePokemon'
 
 import { useState, useEffect, useContext } from 'react'
+import PokemonTypes from './PokemonTypes'
 
 const START_POKEMON = ABRA_ID /* Abra 63 */
 const MIN_POKEMON = 1
@@ -44,6 +45,7 @@ const Pokemon = () => {
     <ContentCard>
       <ContentCard.Content>
         <h3 className='Pokemon__Name'>{pokemon.name}</h3>
+        <PokemonTypes types={pokemon.types} />
         {isAbra && (
           <>
             <p>My favourite Pokémon is Abra.</p>

@@ -1,0 +1,10 @@
+.PokemonTypes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  list-style: none;
+  padding: 0;
+  margin: .2em 0 1em 0;
+}

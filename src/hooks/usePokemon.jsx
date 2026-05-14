@@ -1,4 +1,5 @@
 import { capitalize } from '../utils/capitalize'
+import { parsePokemonTypes } from '../utils/pokemon'
 
 import { useEffect, useState } from 'react'
 
@@ -32,6 +33,7 @@ export const usePokemon = (pokemonId = ABRA_ID) => {
         id: apiPokemon.id,
         name: capitalize(apiPokemon.name),
         imageUrl,
+        types: parsePokemonTypes(apiPokemon.types),
       })
     } catch (err) {
       setPokemon({})
