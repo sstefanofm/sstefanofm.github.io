@@ -4,7 +4,9 @@ import { useEffect, useState } from 'react'
 
 const baseUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
-export const usePokemon = (pokemonId = 63 /* 63 abra */) => {
+const ABRA_ID = 63
+
+export const usePokemon = (pokemonId = ABRA_ID) => {
   const [pokemon, setPokemon] = useState({})
   const [isLoading, setIsLoading] = useState(true)
 
@@ -45,7 +47,7 @@ export const usePokemon = (pokemonId = 63 /* 63 abra */) => {
   return {
     pokemon,
     isLoading,
-    isAbra: pokemon.id === 63
+    isAbra: pokemon.id === ABRA_ID
   }
 }
 

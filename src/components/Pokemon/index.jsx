@@ -1,6 +1,7 @@
 import './Pokemon.css'
 import pokeball from '../../assets/pokeball.png'
 import ContentCard from '../ContentCard'
+import Input from '../Input'
 import { Button } from '../Button'
 import { ThemeContext } from '../../context/ThemeProvider'
 import { useCounter } from '../../hooks/useCounter'
@@ -14,7 +15,7 @@ const MAX_POKEMON = 1025
 
 const Pokemon = () => {
   const { theme } = useContext(ThemeContext)
-  const { counter, incrementCounter, decrementCounter } = useCounter(
+  const { counter, setCounter, incrementCounter, decrementCounter } = useCounter(
     START_POKEMON,
     true,
     MAX_POKEMON,
@@ -43,7 +44,15 @@ const Pokemon = () => {
               classes={pokemonPickerButtonClasses}
               disabled={isLoading || counter <= MIN_POKEMON}
             >&lt;~</Button>
-            <span>&nbsp;&nbsp;{pokemon.id}&nbsp;&nbsp;</span>
+            <Input
+              classes='Pokemon__Picker__Input'
+              type='number'
+              min={MIN_POKEMON}
+              max={MAX_POKEMON}
+              step={1}
+              value={counter}
+              onChange={(e) => setCounter(e.target.value)}
+            />
             <Button
               onclick={incrementCounter}
               classes={pokemonPickerButtonClasses}

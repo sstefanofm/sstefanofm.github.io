@@ -33,3 +33,8 @@
 .Pokemon__LoadingPokeball {
   animation: rotate 1s linear infinite;
 }
+
+.Pokemon__Picker__Input {
+  max-width: 70px;
+  text-align: center;
+}

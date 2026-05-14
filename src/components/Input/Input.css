@@ -1,0 +1,48 @@
+.Input {
+  outline: none;
+  padding: 7px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.Input--Light {
+  background-color: #e1dde1;
+  border-color: #777;
+  border-left-color: #eee;
+  border-top-color: #eee;
+  color: #000;
+}
+
+.Input--Light:active,
+.Input--Light:focus {
+  border-color: #eee;
+  border-left-color: #777;
+  border-top-color: #777;
+}
+
+.Input--Dark {
+  background-color: #313131;
+  border-color: #151515;
+  border-left-color: #777;
+  border-top-color: #777;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.Input--Dark:active,
+.Input--Dark:focus {
+  border-color: #777;
+  border-left-color: #151515;
+  border-top-color: #151515;
+}
+
+.Input[type="number"]::-webkit-outer-spin-button,
+.Input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.Input[type="number"] {
+  -moz-appearance: textfield;
+}
