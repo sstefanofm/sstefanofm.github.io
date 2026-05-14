@@ -8,7 +8,7 @@ export const useCounter = (
   const minValue = onlyPositive ? 1 : -Infinity
 
   const clampValue = (value) => {
-    const n = Number(value)
+    const n = Math.floor(Number(value))
 
     if (isNaN(n))
       return minValue

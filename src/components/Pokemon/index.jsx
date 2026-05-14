@@ -25,7 +25,8 @@ const Pokemon = () => {
 
   useEffect(() => {
     const updateCounterTimeout = setTimeout(() => {
-      setCounter(inputValue)
+      if (!isNaN(Number(inputValue)))
+        setCounter(inputValue)
     }, 7_7_7)
 
     return () => clearTimeout(updateCounterTimeout)
