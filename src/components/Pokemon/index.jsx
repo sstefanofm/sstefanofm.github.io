@@ -9,6 +9,7 @@ import { usePokemon } from '../../hooks/usePokemon'
 import { useContext } from 'react'
 
 const START_POKEMON = 63 /* Abra 63 */
+const MIN_POKEMON = 1
 const MAX_POKEMON = 1025
 
 const Pokemon = () => {
@@ -40,13 +41,13 @@ const Pokemon = () => {
             <Button
               onclick={decrementCounter}
               classes={pokemonPickerButtonClasses}
-              disabled={isLoading}
+              disabled={isLoading || counter <= MIN_POKEMON}
             >&lt;~</Button>
             <span>&nbsp;&nbsp;{pokemon.id}&nbsp;&nbsp;</span>
             <Button
               onclick={incrementCounter}
               classes={pokemonPickerButtonClasses}
-              disabled={isLoading}
+              disabled={isLoading || counter >= MAX_POKEMON}
             >~&gt;</Button>
           </div>
         </div>

@@ -15,7 +15,8 @@ export const usePokemon = (pokemonId = 63 /* 63 abra */) => {
       const response = await fetch(baseUrl + pokemonId)
       const apiPokemon = await response.json()
 
-      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${apiPokemon.id}.png`
+      // const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${apiPokemon.id}.png`
+      const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${apiPokemon.id}.png`
 
       /* preload image in memory */
       await new Promise((resolve) => {
