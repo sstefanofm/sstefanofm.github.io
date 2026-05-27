@@ -1,0 +1,19 @@
+.SpotifyCover {
+  padding: 10px;
+  border: 1px solid #99999944;
+  background: #22222277;
+  border-radius: 5px;
+  margin-right: 13px;
+}
+
+.SpotifyCover--NoAlbum--Light {
+  background: radial-gradient(circle at center, #b090c0aa, #e0e0f044, transparent 200%);
+}
+
+.SpotifyCover--NoAlbum--Dark {
+  background: radial-gradient(circle at center, #b090d066, #e0e0f033, transparent 220%);
+
+  svg {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(196deg) brightness(104%) contrast(105%);
+  }
+}

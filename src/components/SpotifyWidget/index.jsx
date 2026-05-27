@@ -2,6 +2,7 @@ import './SpotifyWidget.css'
 
 import { useEffect, useState } from 'react'
 import { Music } from '../Icon'
+import SpotifyCover from './SpotifyCover'
 
 const IMG_SIZE = 64
 
@@ -19,6 +20,7 @@ const SpotifyWidget = () => {
 
   return (
     <aside className='SpotifyWidget'>
+      <SpotifyCover album={data.data?.album} />
       {data?.isPlaying ? (
         /* is playing */
 /* TODO validatee eee */
