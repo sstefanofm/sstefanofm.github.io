@@ -2,6 +2,7 @@ import './Footer.css'
 import Card from '../Card'
 import { AnchorButton } from '../Button/index'
 import { LinkedIn, Github } from '../Icon'
+import SpotifyWidget from '../SpotifyWidget'
 
 const Footer = () => {
   return (
@@ -11,7 +12,9 @@ const Footer = () => {
       wrap={true}
       classes='Footer'
     >
-      <div></div>
+      <div>
+        <SpotifyWidget />
+      </div>
       <div>
         <AnchorButton href='https://linkedin.com/in/stefano-federici-marsegani'>
           <LinkedIn
