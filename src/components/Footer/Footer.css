@@ -1,11 +1,14 @@
 .Footer {
   padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .Footer > * {
   margin: 5px;
   display: flex;
-  width: 110px;
+  gap: .6em;
   justify-content: space-between;
   align-items: center;
 }
