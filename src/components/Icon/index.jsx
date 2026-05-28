@@ -186,7 +186,7 @@ export const Music = ({ classes, ...props }) => (
     classes={classes}
     viewBox='0 0 24 24'
     stroke='currentColor'
-    strokeWidth='1.25'
+    strokeWidth='1'
     strokeLinecap='round'
     strokeLinejoin='round'
     fill='none'

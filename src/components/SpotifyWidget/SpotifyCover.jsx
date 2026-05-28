@@ -1,27 +1,34 @@
 import './SpotifyCover.css'
-
 import { Music } from '../Icon'
 import Theme from '../../context/theme'
-import { useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeProvider'
 
-const SpotifyCover = ({ album = {} }) => {
+import { useContext } from 'react'
+
+const IMG_SIZE = 46.8
+
+const SpotifyCover = ({ album = {}, isPlaying = false }) => {
   const { theme } = useContext(ThemeContext)
 
-  const hasAlbum = Object.keys(album).length > 0
-  const coverClasses = hasAlbum
-    ? ''
+  const coverClasses = isPlaying
+    ? 'SpotifyCover--Album'
     : `SpotifyCover--NoAlbum ${theme === Theme.LIGHT ? 'SpotifyCover--NoAlbum--Light' : 'SpotifyCover--NoAlbum--Dark'}`
 
   return (
     <div className={`SpotifyCover ${coverClasses}`}>
-      {!hasAlbum ? (
+      {!isPlaying ? (
         <Music
           width={24}
           height={24}
         />
       ) : (
-<></>
+        <img
+          src={album.cover.small.url}
+          alt={album.name}
+          title={album.name}
+          width={IMG_SIZE}
+          height={IMG_SIZE}
+        />
       )}
     </div>
   )

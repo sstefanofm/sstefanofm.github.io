@@ -17,14 +17,26 @@ export const useSpotifyNowPlaying = () => {
   const [spotifyNowPlaying, setSpotifyNowPlaying] = useState(baseSpotifyNowPlaying)
   const [isLoading, setIsLoading] = useState(true)
 
-  useEffect(() => {
+  const getSpotifyNowPlaying = async () => {
+    setIsLoading(true)
+
     try {
-      setSpotifyNowPlaying(baseSpotifyNowPlaying)
+      const response = await fetch(BASE_URL)
+      const snp = await response.json()
+
+      setSpotifyNowPlaying(prev => ({
+        ...prev,
+        ...snp,
+      }))
     } catch (err) {
       setSpotifyNowPlaying(baseSpotifyNowPlaying)
     } finally {
       setIsLoading(false)
     }
+  }
+
+  useEffect(() => {
+    getSpotifyNowPlaying()
   }, [])
 
   return {
