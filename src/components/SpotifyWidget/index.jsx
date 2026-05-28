@@ -3,46 +3,40 @@ import './SpotifyWidget.css'
 import { useEffect, useState } from 'react'
 import { Music } from '../Icon'
 import SpotifyCover from './SpotifyCover'
+import { useSpotifyNowPlaying } from '../../hooks/useSpotifyNowPlaying'
 
 const IMG_SIZE = 64
 
 const SpotifyWidget = () => {
-  const [data, setData] = useState({})
+  const { isLoading, spotifyNowPlaying } = useSpotifyNowPlaying()
 
-  useEffect(() => {
-    const get = async () => await (await fetch('https://sstefanofm-spotify-now-playing.vercel.app/api/now-playing'))
-      .json()
-
-    get().then(d => setData(d))
-  }, [])
-
-  console.log(data)
+  console.log({ isLoading, spotifyNowPlaying })
 
   return (
     <aside className='SpotifyWidget'>
-      <SpotifyCover album={data.data?.album} />
-      {data?.isPlaying ? (
+      <SpotifyCover album={spotifyNowPlaying.data.album} />
+      {spotifyNowPlaying.isPlaying ? (
         /* is playing */
 /* TODO validatee eee */
       <>
         <img
           className='SpotifyWidget__Cover'
-          src={data.data.album.cover.small.url}
-          alt={data.data.album.name}
+          src={spotifyNowPlaying.data.album.cover.small.url}
+          alt={spotifyNowPlaying.data.album.name}
           width={IMG_SIZE}
           height={IMG_SIZE}
         />
         <div>
           <a
-            href={data.data.song.url}
+            href={spotifyNowPlaying.data.song.url}
             target='_blank'
             rel='noreferrer'
-          >{data.data.song.name}</a>
+          >{spotifyNowPlaying.data.song.name}</a>
 
           <div>
-            {data.data.artists.map((artist, i) => (
+            {spotifyNowPlaying.data.artists.map((artist, i) => (
               <>
-                {i !== data.data.artists.length - 1 ? <span>,</span> : <></>}
+                {i !== spotifyNowPlaying.data.artists.length - 1 ? <span>,</span> : <></>}
                 <a
                   key={artist.name}
                   href={artist.url}
