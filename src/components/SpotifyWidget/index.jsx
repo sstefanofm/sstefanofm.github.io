@@ -6,8 +6,6 @@ import { useSpotifyNowPlaying } from '../../hooks/useSpotifyNowPlaying'
 const SpotifyWidget = () => {
   const { isLoading, spotifyNowPlaying } = useSpotifyNowPlaying()
 
-  console.log({ isLoading, spotifyNowPlaying })
-
   return (
     <aside className='SpotifyWidget'>
       <SpotifyCover

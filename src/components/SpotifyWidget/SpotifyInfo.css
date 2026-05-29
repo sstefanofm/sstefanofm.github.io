@@ -1,0 +1,42 @@
+.SpotifyInfo {
+  font-size: .8em;
+
+  .SpotifyInfo__Song,
+  .SpotifyInfo__Artists__Artist {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+  }
+}
+
+.SpotifyInfo__Song--Light,
+.SpotifyInfo__Artists__Artist--Light {
+  color: #222;
+}
+
+.SpotifyInfo__Song--Light:hover,
+.SpotifyInfo__Artists__Artist--Light:hover,
+.SpotifyInfo__Song--Light:active,
+.SpotifyInfo__Artists__Artist--Light:active {
+  color: #a8a;
+}
+
+.SpotifyInfo__Song--Dark,
+.SpotifyInfo__Artists__Artist--Dark {
+  color: #e0e0e0;
+}
+
+.SpotifyInfo__Song--Dark:hover,
+.SpotifyInfo__Artists__Artist--Dark:hover,
+.SpotifyInfo__Song--Dark:active,
+.SpotifyInfo__Artists__Artist--Dark:active {
+  color: #848;
+}
+
+@media screen and (max-width: 900px) {
+  .SpotifyInfo {
+  }
+}

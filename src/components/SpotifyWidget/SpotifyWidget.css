@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 37dvw;
 }
 
 .SpotifyWidget__NotPlaying {
@@ -13,14 +14,14 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 755px) {
   .SpotifyWidget {
-    width: 160px;
+    max-width: 50dvw;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .SpotifyWidget {
-    width: 130px;
+    max-width: 30dvw;
   }
 }

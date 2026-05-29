@@ -2,6 +2,7 @@
   border: 1px solid #99999944;
   border-radius: 5px;
   margin-right: .7em;
+  flex-shrink: 0;
 }
 
 .SpotifyCover--Album {
