@@ -1,6 +1,7 @@
 import './SpotifyInfo.css'
 import { ThemeContext } from '../../context/ThemeProvider'
 import Theme from '../../context/theme'
+import SpotifyProgressBar from './SpotifyProgressBar'
 
 import { Fragment, useContext } from 'react'
 
@@ -35,6 +36,11 @@ const SpotifyInfo = ({ info = {} }) => {
           </Fragment>
         ))}
       </div>
+
+      <SpotifyProgressBar
+        currentTimeMs={info.duration.progressMs}
+        totalTimeMs={info.duration.totalMs}
+      />
     </div>
   )
 }

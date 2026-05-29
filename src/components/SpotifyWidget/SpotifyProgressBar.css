@@ -1,0 +1,30 @@
+.SpotifyProgressBar {
+  width: 100%;
+  margin-top: 5px;
+  position: relative;
+  height: 4px;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.SpotifyProgressBar--Light {
+  background: #22222233;
+}
+
+.SpotifyProgressBar--Dark {
+  background: #ffffff22;
+}
+
+.SpotifyProgressBar__Fill {
+  position: absolute;
+  height: 100%;
+  transition: 999ms;
+}
+
+.SpotifyProgressBar__Fill--Light {
+  background: #a8a;
+}
+
+.SpotifyProgressBar__Fill--Dark {
+  background: #848;
+}
