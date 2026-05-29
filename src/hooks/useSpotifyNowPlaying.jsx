@@ -39,6 +39,19 @@ export const useSpotifyNowPlaying = () => {
     getSpotifyNowPlaying()
   }, [])
 
+  useEffect(() => {
+    const totalMs = spotifyNowPlaying.data?.duration?.totalMs ?? 0
+    const progressMs = spotifyNowPlaying.data?.duration?.progressMs ?? 0
+
+    if (!spotifyNowPlaying.isPlaying || progressMs >= totalMs)
+      return
+
+    const remaining = totalMs - progressMs
+    const getDataTimeout = setTimeout(getSpotifyNowPlaying, remaining)
+
+    return () => clearTimeout(getDataTimeout)
+  }, [spotifyNowPlaying])
+
   return {
     isLoading,
     spotifyNowPlaying,

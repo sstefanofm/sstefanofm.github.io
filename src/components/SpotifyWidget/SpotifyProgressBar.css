@@ -5,6 +5,7 @@
   height: 4px;
   border-radius: 99px;
   overflow: hidden;
+  width: 100px;
 }
 
 .SpotifyProgressBar--Light {
