@@ -2,7 +2,7 @@ import './SpotifyInfo.css'
 import { ThemeContext } from '../../context/ThemeProvider'
 import Theme from '../../context/theme'
 
-import { useContext } from 'react'
+import { Fragment, useContext } from 'react'
 
 const SpotifyInfo = ({ info = {} }) => {
   const { theme } = useContext(ThemeContext)
@@ -21,16 +21,18 @@ const SpotifyInfo = ({ info = {} }) => {
 
       <div className='SpotifyInfo__Artists'>
         {info.artists.map((artist, i) => (
-          <a
-            key={artist.url}
-            href={artist.url}
-            className={`SpotifyInfo__Artists__Artist ${theme === Theme.LIGHT ? 'SpotifyInfo__Artists__Artist--Light' : 'SpotifyInfo__Artists__Artist--Dark'}`}
-            target='_blank'
-            rel='noreferrer'
-            title={artist.name}
-          >
-            {artist.name}{i < info.artists.length - 1 ? ', ' : ''}
-          </a>
+          <Fragment key={artist.url}>
+            <a
+              href={artist.url}
+              className={`SpotifyInfo__Artists__Artist ${theme === Theme.LIGHT ? 'SpotifyInfo__Artists__Artist--Light' : 'SpotifyInfo__Artists__Artist--Dark'}`}
+              target='_blank'
+              rel='noreferrer'
+              title={artist.name}
+            >
+              {artist.name}
+            </a>
+            {i < info.artists.length - 1 ? (<span>,&nbsp;</span>) : (<></>)}
+          </Fragment>
         ))}
       </div>
     </div>

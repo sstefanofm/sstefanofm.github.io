@@ -12,6 +12,10 @@
   }
 }
 
+.SpotifyInfo__Artists {
+  display: flex;
+}
+
 .SpotifyInfo__Song--Light,
 .SpotifyInfo__Artists__Artist--Light {
   color: #222;
